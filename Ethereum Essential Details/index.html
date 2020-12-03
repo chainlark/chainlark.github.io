@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2N33BB7DE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L2N33BB7DE');
+</script>
+
+        
+        
+
+        <title>Ethereum Essential |  以太坊核心概念</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="shortcut icon", href="/assets/favicon.ico">
+<link rel="apple-touch-icon", href="/assets/apple-touch-icon.png">
+
+
+
+   <link type="text/css" rel="stylesheet" href="/css/style.cbccf44123d97de1b744.css">
+
+   <link type="text/css" rel="stylesheet" href="/css/style.dcbb4440a3b2d8097f17.css">
+ 
+        
+    
+    <link rel='stylesheet' href="/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.2.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">ChainLark | 链晓</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>ChainLark | 链晓</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <!-- <div class="al_sidebar_author_info">
+                <h4>chainlark</h4>
+                <img class="al_sidebar_avatar" src="">
+                <p></p>
+            </div> -->
+
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        Ethereum Essential |  以太坊核心概念
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            2020-12-03
+                        </div>
+
+                        
+                            <div class="al_page_content_info">
+                               共 832 词
+                            </div>
+                        
+
+                        
+                            <div class="al_page_content_info">
+                               大约需要 2 分钟阅读
+                            </div>
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B4%A6%E6%88%B7%E7%B1%BB%E5%9E%8B"><span class="toc-text">账户类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E7%8A%B6%E6%80%81"><span class="toc-text">世界状态</span></a></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <h1 id="账户类型"><a href="#账户类型" class="headerlink" title="账户类型"></a>账户类型</h1><hr>
+<p>以太坊中有两种类型的账户：</p>
+<ul>
+<li>外部权属账户（Externally Owned Accounts 简称 EOA）</li>
+<li>合约账户</li>
+</ul>
+<p>我们平时用来互相收发以太币、部署智能合约的账户就是 外部所有账户账户，而部署智能合约时自动生成的账户则是合约账户。</p>
+<blockquote>
+<p>合约账户通常是部署的时候生成的，其账户地址的生成同部署者的nonce值有关。</p>
+</blockquote>
+<p>每一个账户都有账户状态（Account State），账户状态是有序组织起来的规范化数据结构，它存储了当前账户以太币的余额信息、当前账户发送过的交易数量等信息，其内容包括：</p>
+<table>
+<thead>
+<tr>
+<th>简称</th>
+<th>描述</th>
+<th>可变性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>nonce</strong></td>
+<td>从该账户发起的交易数量计数以及该账户进行的合约创建操作计数（转账一次加一，部署一次加一）</td>
+<td>可变</td>
+</tr>
+<tr>
+<td><strong>balance</strong></td>
+<td>此账户所拥有的以太币数量（以 <a target="_blank" rel="noopener" href="http://ethdocs.org/en/latest/ether.html">Wei</a> 计量）</td>
+<td>可变</td>
+</tr>
+<tr>
+<td><strong>storageRoot</strong></td>
+<td><em>账户存储树</em>的根节点哈希值（对于外部权属账户EOA而言，该字段为空）</td>
+<td>可变</td>
+</tr>
+<tr>
+<td><strong>codeHash</strong></td>
+<td>对于合约账户而言，codeHash即此合约账户地址部署的 智能合约代码的哈希值（对于 外部权属 账户而言，该字段为空字符串哈希值）</td>
+<td>不可变</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>上述属性除了 codeHash之外都是会变化的，比如，当一个账户向其他账户发送以太币时，除了 账户的余额会改变，nonce也 会相应增加。而 codeHash 是不可变的，这就意味着，如果部署了有漏洞的智能合约，后面也无法修复更新此合约。</p>
+</blockquote>
+<p>账户存储树（storage-tree）是保存与账户相关联数据的结构，该字段只有合约账户才有，而在 EOA 中， storageRoot 留空，codeHash 则是一串空字符串的哈希值。</p>
+<p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glb1xg413nj30fo070gm2.jpg"></p>
+<p style="text-align: center; font-size: 12px; color: #9f9f9f">账户状态与账户存储树<p>
+
+<p>所有智能合约的数据都以 32 字节映射的形式保存在账户存储树中，智能合约的数据存储细节参考<a target="_blank" rel="noopener" href="https://medium.com/coinmonks/a-practical-walkthrough-smart-contract-storage-d3383360ea1b" title="A (Practical) Walkthrough of Smart Contract Storage">这篇文章</a></p>
+<h1 id="世界状态"><a href="#世界状态" class="headerlink" title="世界状态"></a>世界状态</h1><hr>
+<p>在<strong>账户类型</strong>小节中我们已经知道，账户的表现形式为<code>地址 =&gt; Account State</code>的映射，世界状态就是把全局所有的账户整合起来的概念。</p>
+<p>世界状态就是无数账户状态的集合，其数据的组织方式是用树的形式进行组织的，如下图所示：</p>
+<p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glb1xgn5wqj30kx0950tg.jpg" alt="wordstate"></p>
+<p style="text-align: center; font-size: 12px; color: #9f9f9f">世界状态树与账户存储<p>
+
+
+<p>世界状态可以被视作为随着交易的执行而持续更新的全局状态，比如说账户Alice给Bob转账了5个以太币，那么整个世界状态中的两个账户状态发生了改变，整棵树都会发生变化，我们称之为世界状态改变。以太坊就像一个去中心化的计算机，世界状态则是这台电脑的硬盘。以太坊中所有的账户信息都体现在世界状态之中，以树的形式进行组织。如果你想知道某一账户的余额，或者某智能合约当前的状态，就需要通过查询世界状态树来获取该账户的具体状态信息。</p>
+<blockquote>
+<p>to be continued</p>
+</blockquote>
+
+                </section>
+
+                
+                
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+
+    </div>
+
+    
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+            <!-- webpack injection location -->
+        
+        <script type="text/javascript" async="async" src="/js/ed188c6aa5d272a0535a.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/7d599ed35a619c912e6e.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/593725446735afb2fcb0.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/59ff6be592735723ad3f.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/7a936fa43c976f2e0325.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/83e3961ca4ceccd57f52.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/55caf9ec8476e8eb1b14.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/848b71cce8dd4459462a.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/796836536591ce251401.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/c42f8623735249b8a08a.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/6b37a295d732d12c5624.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/216ae5782ad859b06c07.chunk.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/main.js"></script>
+        
+        <script type="text/javascript" async="async" src="/js/index.js"></script>
+        
+        
+    </body>
+</html>
+        
