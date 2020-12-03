@@ -84,14 +84,14 @@ a {
 h1,
 h2,
 h3 {
-  font-family: "AvenirNext-Medium";
+  font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Hiragino Sans GB, Microsoft YaHei, "\5FAE\8F6F\96C5\9ED1", helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, Arial, sans-serif;
 }
 h1 {
-  font-size: 44px;
+  font-size: 32px;
 }
 h2 {
-  font-size: 32px;
-  margin-top: 50px;
+  font-size: 26px;
+  margin-top: 20px;
 }
 h3 {
   font-size: 22px;
@@ -809,4 +809,4 @@ ol li::before {
 }
 
 
-/*# sourceMappingURL=style.dcbb4440a3b2d8097f17.css.map*/
+/*# sourceMappingURL=style.0c09fb246d7fe7e66e57.css.map*/
