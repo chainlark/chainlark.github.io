@@ -329,10 +329,10 @@
 </tbody></table>
 <h2 id="数据组织方式"><a href="#数据组织方式" class="headerlink" title="数据组织方式"></a>数据组织方式</h2><p>总体而言，以太坊有四种前缀树：</p>
 <ol>
-<li><strong>世界状态树 (The world state trie)</strong> ：包括了从地址到账户状态之间的映射。 世界状态树的根节点哈希值由区块保存（在 stateRoot 字段），它标识了区块创建时的当前状态。整个网络中只有一个世界状态树。</li>
-<li><strong>账户存储树 (The account storage trie)</strong> ：保存了与某一智能合约相关的数据信息。由账户状态保存账户存储树的根节点哈希值（在 storageRoot 字段）。每个账户都有一个账户存储树。</li>
-<li>**交易树 (The transaction trie)**：包含了一个区块中的所有交易信息。由区块头（在 transactionsRoot 区域）保存交易树的根节点哈希值。每个区块都有一棵交易树。</li>
-<li><strong>交易收据树 (The transaction receipt trie)</strong> ：包含了一个区块中所有交易的收据信息。同样由区块头（在 receiptsRoot 区域）保存交易收据树的根节点哈希值；每个区块都有对应的交易收据树。</li>
+<li>世界状态树 (The world state trie)：包括了从地址到账户状态之间的映射。 世界状态树的根节点哈希值由区块保存（在 stateRoot 字段），它标识了区块创建时的当前状态。整个网络中只有一个世界状态树。</li>
+<li>账户存储树 (The account storage trie)：保存了与某一智能合约相关的数据信息。由账户状态保存账户存储树的根节点哈希值（在 storageRoot 字段）。每个账户都有一个账户存储树。</li>
+<li>交易树 (The transaction trie)：包含了一个区块中的所有交易信息。由区块头（在 transactionsRoot 区域）保存交易树的根节点哈希值。每个区块都有一棵交易树。</li>
+<li>交易收据树 (The transaction receipt trie)：包含了一个区块中所有交易的收据信息。同样由区块头（在 receiptsRoot 区域）保存交易收据树的根节点哈希值；每个区块都有对应的交易收据树。</li>
 </ol>
 <p>以太坊的数据组织可以以下图所示进行解释：</p>
 <p><img src="https://chainlark.oss-cn-beijing.aliyuncs.com/vq02j.jpg" alt="img"></p>
