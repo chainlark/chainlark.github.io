@@ -99,13 +99,13 @@
 
                         
                             <div class="al_page_content_info">
-                               共 2.6k 词
+                               共 3.1k 词
                             </div>
                         
 
                         
                             <div class="al_page_content_info">
-                               大约需要 9 分钟阅读
+                               大约需要 10 分钟阅读
                             </div>
                         
                         <span class="tags"></span>
@@ -114,13 +114,23 @@
 
                 
                     <div class="al_page_content_outline">
-                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%A6%E6%88%B7%E7%B1%BB%E5%9E%8B-Accounts"><span class="toc-text">账户类型 (Accounts)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E7%8A%B6%E6%80%81-World-State"><span class="toc-text">世界状态 (World State)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%A4%E6%98%93-Transaction"><span class="toc-text">交易 (Transaction)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E5%9D%97-Block"><span class="toc-text">区块 (Block)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%84%E7%BB%87%E6%96%B9%E5%BC%8F"><span class="toc-text">数据组织方式</span></a></li></ol>
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%A6%E6%88%B7%E7%B1%BB%E5%9E%8B-Accounts"><span class="toc-text">账户类型 (Accounts)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E7%8A%B6%E6%80%81-World-State"><span class="toc-text">世界状态 (World State)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%A4%E6%98%93-Transaction"><span class="toc-text">交易 (Transaction)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E5%9D%97-Block"><span class="toc-text">区块 (Block)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%84%E7%BB%87%E6%96%B9%E5%BC%8F"><span class="toc-text">数据组织方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">参考文献</span></a></li></ol>
                     </div>
                 
 
                 
                 <section id="post-body">
-                    <h2 id="账户类型-Accounts"><a href="#账户类型-Accounts" class="headerlink" title="账户类型 (Accounts)"></a>账户类型 (Accounts)</h2><p>以太坊中有两种类型的账户：</p>
+                    <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>以太坊可以看做是一台巨大的计算机，人们输入（发送交易），执行逻辑（智能合约执行），并将数据进行存储（世界状态）然后输出结果（回执）。如果用状态机的思想进行类比的话，以太坊就是一个不断变化的状态机，重初始状态（创世状态）开始，通过不断地输入（交易）进行状态变化，上述过程可以简单地用下图示意：</p>
+<p><img src="https://chainlark.oss-cn-beijing.aliyuncs.com/6lrcj.jpg" alt="Ethereum as a state transition machine"></p>
+<p>在状态机模型中，状态$\sigma_t$和${\sigma_{t+1}}$分别是两个不同的状态，交易 $T$ 是将状态${\sigma_t}$变迁到了${\sigma_{t+1}}$。</p>
+<p>在以太坊中，所有的状态变化其实都是由交易引发的，但是如果每一笔交易都需要进行一次状态检查以确认所有的参与节点都正常变迁的话，成本太高了，所以人们想到，把一批交易作为一个检查单元，一批交易处理完之后，检查变化后的总状态，所以引出了区块的概念。其实区块把交易聚合在了一起，并进行广播。一个区块B中包含一批交易$[T_0,T_1,…]$：<br>$$<br>B \equiv (…,(T_0, T_1,…))<br>$$<br>现在以区块为单位进行交易处理以及状态更新，并进行状态检查，那么我们可以得到：<br>$$<br>\sigma_{t +1} \equiv \prod(\sigma_t,B)<br>$$</p>
+<ul>
+<li>$\sigma_t + 1$ 下一个新的世界状态</li>
+<li>$\prod$ 是区块级别的状态转换函数</li>
+<li>$\sigma_t$ 是当前的世界状态</li>
+<li>$B$ 是一个包含一批交易的区块</li>
+</ul>
+<h2 id="账户类型-Accounts"><a href="#账户类型-Accounts" class="headerlink" title="账户类型 (Accounts)"></a>账户类型 (Accounts)</h2><p>以太坊中有两种类型的账户：</p>
 <ul>
 <li>外部权属账户（Externally Owned Accounts 简称 EOA）</li>
 <li>合约账户</li>
@@ -166,7 +176,7 @@
 <p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glb1xg413nj30fo070gm2.jpg"></p>
 <p style="text-align: center; font-size: 12px; color: #9f9f9f">账户状态与账户存储树<p>
 
-<p>所有智能合约的数据都以 32 字节映射的形式保存在账户存储树中，智能合约的数据存储细节参考<a target="_blank" rel="noopener" href="https://medium.com/coinmonks/a-practical-walkthrough-smart-contract-storage-d3383360ea1b" title="A (Practical) Walkthrough of Smart Contract Storage">这篇文章</a></p>
+<p>所有智能合约的数据都以 32 字节映射的形式保存在账户存储树中，智能合约的数据存储细节参考<a target="_blank" rel="noopener" href="https://medium.com/coinmonks/a-practical-walkthrough-smart-contract-storage-d3383360ea1b">这篇文章</a></p>
 <h2 id="世界状态-World-State"><a href="#世界状态-World-State" class="headerlink" title="世界状态 (World State)"></a>世界状态 (World State)</h2><p>在<strong>账户类型</strong>小节中我们已经知道，账户的表现形式为<code>地址 =&gt; Account State</code>的映射，世界状态就是把全局所有的账户整合起来的概念。</p>
 <p>世界状态就是无数账户状态的集合，其数据的组织方式是用树的形式进行组织的，如下图所示：</p>
 <p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glb1xgn5wqj30kx0950tg.jpg" alt="wordstate"></p>
@@ -339,7 +349,11 @@
 <p style="text-align: center; font-size: 12px; color: #9f9f9f">区块、交易、账户状态对象以及以太坊的默克尔树<p>
 
 
-
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://www.lucassaldanha.com/ethereum-yellow-paper-walkthrough-1/">https://www.lucassaldanha.com/ethereum-yellow-paper-walkthrough-1/</a></li>
+<li><a target="_blank" rel="noopener" href="https://ethfans.org/posts/ethereum-explained-merkle-trees-world-state-transactions-and-more">https://ethfans.org/posts/ethereum-explained-merkle-trees-world-state-transactions-and-more</a></li>
+<li><a target="_blank" rel="noopener" href="https://ethereum.stackexchange.com/questions/27432/what-is-nonce-in-ethereum-how-does-it-prevent-double-spending">https://ethereum.stackexchange.com/questions/27432/what-is-nonce-in-ethereum-how-does-it-prevent-double-spending</a></li>
+</ol>
 
                 </section>
 
@@ -379,7 +393,11 @@
     </div>
 </div>
 
-            <!-- webpack injection location -->
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <!-- webpack injection location -->
         
         <script type="text/javascript" async="async" src="/js/ed188c6aa5d272a0535a.chunk.js"></script>
         
