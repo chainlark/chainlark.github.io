@@ -156,6 +156,7 @@ body {
   margin: 0;
   background-color: #f8f8f8;
   overflow-x: hidden;
+  background: #000;
 }
 body.al_no_scroll {
   overflow: hidden;
@@ -957,4 +958,4 @@ ol li::before {
 }
 
 
-/*# sourceMappingURL=style.23ff542f4c6340962a8e.css.map*/
+/*# sourceMappingURL=style.e163229768fe4ef088a6.css.map*/
