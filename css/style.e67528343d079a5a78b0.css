@@ -353,10 +353,6 @@ em {
     padding: 20px 0;
   }
 }
-.al_page_background {
-  background-color: #292525;
-  z-index: 10;
-}
 .al_page_container {
   z-index: 20;
   position: relative;
@@ -545,6 +541,8 @@ code:not(.hljs) {
   font-size: 0.9em;
 }
 #post-body > table {
+  overflow-x: auto;
+  white-space: nowrap;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
@@ -574,9 +572,6 @@ code:not(.hljs) {
 #post-body > ul {
   list-style: none;
 }
-#post-body > ul li {
-  text-indent: -0.7em;
-}
 #post-body > ul li::before {
   content: "•";
   color: #292525;
@@ -588,7 +583,6 @@ ol {
 }
 ol li {
   display: block;
-  text-indent: -1.45em;
 }
 ol li::before {
   content: counter(ol) ".";
@@ -810,4 +804,4 @@ ol li::before {
 }
 
 
-/*# sourceMappingURL=style.47816ee3d59434d3d747.css.map*/
+/*# sourceMappingURL=style.e67528343d079a5a78b0.css.map*/
