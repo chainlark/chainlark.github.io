@@ -365,6 +365,8 @@ em {
 }
 .al_main_page_container {
   font-size: 15px;
+  white-space: break-spaces;
+  overflow-wrap: break-word;
 }
 .al_main_page_container img,
 .al_main_page_container video {
@@ -809,4 +811,4 @@ ol li::before {
 }
 
 
-/*# sourceMappingURL=style.0c09fb246d7fe7e66e57.css.map*/
+/*# sourceMappingURL=style.b7a191964186267cef33.css.map*/
