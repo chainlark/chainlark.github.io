@@ -771,7 +771,7 @@ ol li::before {
   margin-right: 0.5em;
 }
 @media (prefers-color-scheme: dark) {
-  ol li {
+  ol li::before {
     color: #fdfdfd;
   }
 }
@@ -997,4 +997,4 @@ ol li::before {
 }
 
 
-/*# sourceMappingURL=style.2e78eeb01a5e2d3a6e46.css.map*/
+/*# sourceMappingURL=style.a0bd005e661ff3ff1e5d.css.map*/
