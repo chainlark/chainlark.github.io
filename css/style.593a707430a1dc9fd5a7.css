@@ -719,6 +719,7 @@ code:not(.hljs) {
 #post-body > table {
   overflow-x: auto;
   white-space: nowrap;
+  font-size: 0.95em;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
@@ -773,6 +774,11 @@ ol li::before {
   display: inline-block;
   min-width: 1em;
   margin-right: 0.5em;
+}
+@media (prefers-color-scheme: dark) {
+  ol li {
+    color: #fdfdfd;
+  }
 }
 .al_sidebar_cnt {
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -996,4 +1002,4 @@ ol li::before {
 }
 
 
-/*# sourceMappingURL=style.6de8bd6e1311aea66aef.css.map*/
+/*# sourceMappingURL=style.593a707430a1dc9fd5a7.css.map*/
