@@ -226,14 +226,10 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-a,
-a:visited {
-  color: #fdfdfd;
-}
-a:hover,
-a:focus,
-a:active {
-  color: #f1f1f1;
+@media screen and (max-device-width: 768px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
 }
 @font-face {
   font-family: Josefin Sans;
@@ -1002,4 +998,4 @@ ol li::before {
 }
 
 
-/*# sourceMappingURL=style.593a707430a1dc9fd5a7.css.map*/
+/*# sourceMappingURL=style.5ba30e1cb58350d9e51f.css.map*/
