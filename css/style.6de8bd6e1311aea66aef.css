@@ -540,6 +540,14 @@ em {
 .al_main_page_container a {
   color: #292525;
 }
+@media (prefers-color-scheme: dark) {
+  .al_main_page_container a {
+    color: #f1f1f1;
+  }
+  .al_main_page_container a:visited {
+    color: #d3d3d3;
+  }
+}
 .al_main_page_container q,
 .al_main_page_container blockquote {
   quotes: none;
@@ -988,4 +996,4 @@ ol li::before {
 }
 
 
-/*# sourceMappingURL=style.c3dcdb86066ae190d224.css.map*/
+/*# sourceMappingURL=style.6de8bd6e1311aea66aef.css.map*/
