@@ -98,13 +98,13 @@
 
                         
                             <div class="al_page_content_info">
-                               共 21.4k 词
+                               共 15.7k 词
                             </div>
                         
 
                         
                             <div class="al_page_content_info">
-                               大约需要 76 分钟阅读
+                               大约需要 56 分钟阅读
                             </div>
                         
                         <span class="tags"></span>
@@ -113,7 +113,7 @@
 
                 
                     <div class="al_page_content_outline">
-                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Prerequist"><span class="toc-text">Prerequist</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B1%E8%AF%86%E9%97%AE%E9%A2%98-Consensus-Problem"><span class="toc-text">共识问题 (Consensus Problem)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-text">概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CFT-amp-BFT"><span class="toc-text">CFT &amp; BFT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FLP-%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%8E%9F%E7%90%86"><span class="toc-text">FLP 不可能原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E5%86%9B%E9%97%AE%E9%A2%98"><span class="toc-text">两军问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%9C%E5%8D%A0%E5%BA%AD%E5%B0%86%E5%86%9B%E9%97%AE%E9%A2%98"><span class="toc-text">拜占庭将军问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quorum%E6%9C%BA%E5%88%B6-Quorum-intersection"><span class="toc-text">Quorum机制 (Quorum intersection)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PBFT-%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95"><span class="toc-text">PBFT 共识算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD%E4%B8%8E%E5%8F%98%E9%87%8F"><span class="toc-text">术语与变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%A6%E5%AE%9A%E5%8F%98%E9%87%8F"><span class="toc-text">约定变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E5%AE%9A%E5%8F%98%E9%87%8F"><span class="toc-text">推定变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E6%B5%81%E7%A8%8B"><span class="toc-text">常规流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#leader-%E6%89%93%E5%8C%85%E5%8C%BA%E5%9D%97-%C2%B6"><span class="toc-text">leader 打包区块 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E6%B5%81%E7%A8%8B-%C2%B6"><span class="toc-text">常规流程 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E7%82%B9-%C2%B6"><span class="toc-text">检查点 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E6%98%93%E6%B1%A0-%C2%B6"><span class="toc-text">交易池 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE-%C2%B6"><span class="toc-text">视图 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E6%A3%80%E6%B5%8B%E5%88%B0%E7%9A%84%E6%8B%9C%E5%8D%A0%E5%BA%AD%E8%A1%8C%E4%B8%BA-%C2%B6"><span class="toc-text">可检测到的拜占庭行为 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B"><span class="toc-text">算法流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E7%AE%97%E6%B3%95%E6%A0%B8%E5%BF%83%E4%B8%89%E9%98%B6%E6%AE%B5%E6%B5%81%E7%A8%8B"><span class="toc-text">2.3. 算法核心三阶段流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-checkpoint-%E3%80%81stable-checkpoint-%E5%92%8C%E9%AB%98%E4%BD%8E%E6%B0%B4%E4%BD%8D"><span class="toc-text">2.4.checkpoint 、stable checkpoint 和高低水位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-ViewChange%EF%BC%88%E8%A7%86%E5%9B%BE%E6%9B%B4%E6%94%B9%EF%BC%89%E4%BA%8B%E4%BB%B6"><span class="toc-text">2.5.ViewChange（视图更改）事件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E7%82%B9"><span class="toc-text">检查点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E6%98%93%E6%B1%A0"><span class="toc-text">交易池</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%E5%8E%8B%E7%BC%A9"><span class="toc-text">日志压缩</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE%E5%8F%98%E6%9B%B4%E6%B5%81%E7%A8%8B"><span class="toc-text">视图变更流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE%E5%8F%98%E6%9B%B4%E6%B5%81%E7%A8%8B-%C2%B6"><span class="toc-text">视图变更流程 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE%E5%88%87%E6%8D%A2%EF%BC%88View-Change%EF%BC%89"><span class="toc-text">视图切换（View-Change）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E6%81%A2%E5%A4%8D%E6%B5%81%E7%A8%8B"><span class="toc-text">主动恢复流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E4%B8%BB%E6%81%A2%E5%A4%8D%E6%B5%81%E7%A8%8B-%C2%B6"><span class="toc-text">自主恢复流程 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E6%81%A2%E5%A4%8D"><span class="toc-text">主动恢复</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E8%8A%82%E7%82%B9%E6%B5%81%E7%A8%8B"><span class="toc-text">增删节点流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E8%8A%82%E7%82%B9"><span class="toc-text">增删节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E8%8A%82%E7%82%B9%E6%B5%81%E7%A8%8B-%C2%B6"><span class="toc-text">新增节点流程 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E6%80%A7%E8%AF%81%E6%98%8E"><span class="toc-text">安全性证明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Q-amp-A"><span class="toc-text">Q&amp;A</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81raft-%E5%92%8C-pbft-%E7%9A%84%E5%AF%B9%E6%AF%94"><span class="toc-text">三、raft 和 pbft 的对比</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E8%8A%82%E7%82%B9%E7%B1%BB%E5%9E%8B-%C2%B6"><span class="toc-text">1.1 节点类型 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E8%8A%82%E7%82%B9-ID-amp-amp-%E8%8A%82%E7%82%B9%E7%B4%A2%E5%BC%95-%C2%B6"><span class="toc-text">1.2 节点 ID &amp;&amp; 节点索引 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E8%A7%86%E5%9B%BE-view-%C2%B6"><span class="toc-text">1.3 视图 (view)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E5%85%B1%E8%AF%86%E6%B6%88%E6%81%AF-%C2%B6"><span class="toc-text">1.4 共识消息 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-leader-%E6%89%93%E5%8C%85%E5%8C%BA%E5%9D%97-%C2%B6"><span class="toc-text">3.1 leader 打包区块 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-pre-prepare-%E9%98%B6%E6%AE%B5-%C2%B6"><span class="toc-text">3.2 pre-prepare 阶段 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-Prepare-%E9%98%B6%E6%AE%B5-%C2%B6"><span class="toc-text">3.3 Prepare 阶段 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-Commit-%E9%98%B6%E6%AE%B5-%C2%B6"><span class="toc-text">3.4 Commit 阶段 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E8%A7%86%E5%9B%BE%E5%88%87%E6%8D%A2%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B-%C2%B6"><span class="toc-text">3.5 视图切换处理流程 </span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">五、参考文献</span></a></li></ol>
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Prerequist"><span class="toc-text">Prerequist</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B1%E8%AF%86%E9%97%AE%E9%A2%98-Consensus-Problem"><span class="toc-text">共识问题 (Consensus Problem)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-text">概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CFT-amp-BFT"><span class="toc-text">CFT &amp; BFT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FLP-%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%8E%9F%E7%90%86"><span class="toc-text">FLP 不可能原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E5%86%9B%E9%97%AE%E9%A2%98"><span class="toc-text">两军问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%9C%E5%8D%A0%E5%BA%AD%E5%B0%86%E5%86%9B%E9%97%AE%E9%A2%98"><span class="toc-text">拜占庭将军问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quorum%E6%9C%BA%E5%88%B6-Quorum-intersection"><span class="toc-text">Quorum机制 (Quorum intersection)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PBFT-%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95"><span class="toc-text">PBFT 共识算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD%E4%B8%8E%E5%8F%98%E9%87%8F"><span class="toc-text">术语与变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%A6%E5%AE%9A%E5%8F%98%E9%87%8F"><span class="toc-text">约定变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD"><span class="toc-text">术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E5%AE%9A%E5%8F%98%E9%87%8F"><span class="toc-text">推定变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3"><span class="toc-text">主要思想</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E6%B5%81%E7%A8%8B"><span class="toc-text">常规流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%AE%9A%E4%B9%89"><span class="toc-text">初始定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E5%87%86%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B"><span class="toc-text">标准算法流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%A7%8D%E4%BC%98%E5%8C%96%E6%B5%81%E7%A8%8B"><span class="toc-text">一种优化流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E7%82%B9%E6%9C%BA%E5%88%B6"><span class="toc-text">检查点机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AD%BE%E5%90%8D"><span class="toc-text">密码学签名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE%E5%8F%98%E6%9B%B4%E6%B5%81%E7%A8%8B-View-Change"><span class="toc-text">视图变更流程 View-Change</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE%E5%88%87%E6%8D%A2%E8%BF%87%E7%A8%8B%EF%BC%88View-Change%EF%BC%89"><span class="toc-text">视图切换过程（View-Change）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E6%A3%80%E6%B5%8B%E5%88%B0%E7%9A%84%E6%8B%9C%E5%8D%A0%E5%BA%AD%E8%A1%8C%E4%B8%BA"><span class="toc-text">可检测到的拜占庭行为</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E6%81%A2%E5%A4%8D%E6%B5%81%E7%A8%8B"><span class="toc-text">主动恢复流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E4%B8%BB%E6%81%A2%E5%A4%8D%E6%B5%81%E7%A8%8B"><span class="toc-text">自主恢复流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E6%81%A2%E5%A4%8D"><span class="toc-text">主动恢复</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E8%8A%82%E7%82%B9%E6%B5%81%E7%A8%8B"><span class="toc-text">增删节点流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E8%8A%82%E7%82%B9"><span class="toc-text">增删节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E8%8A%82%E7%82%B9%E6%B5%81%E7%A8%8B"><span class="toc-text">新增节点流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E6%80%A7%E8%AF%81%E6%98%8E"><span class="toc-text">安全性证明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%E6%A6%82%E5%BF%B5"><span class="toc-text">附加概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E6%98%93%E6%B1%A0"><span class="toc-text">交易池</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PBFT-%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="toc-text">PBFT 状态机</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-text">常见问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#State"><span class="toc-text">State</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Three-Phase-Protocol"><span class="toc-text">Three Phase Protocol</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VIEW-CHANGE"><span class="toc-text">VIEW-CHANGE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NEW-VIEW"><span class="toc-text">NEW-VIEW</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#raft-%E5%92%8C-pbft-%E7%9A%84%E5%AF%B9%E6%AF%94"><span class="toc-text">raft 和 pbft 的对比</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">五、参考文献</span></a></li></ol>
                     </div>
                 
 
@@ -201,6 +201,17 @@
 <li>拜占庭或者是宕机节点集合为定义为 $F$，其数量定义为 $|F| = f$</li>
 <li>$ quorum$ 法定成员集合$Q$，即每次访问的节点数量$|Q|$ </li>
 </ul>
+<h3 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h3><ul>
+<li><strong>Primary</strong>: 主节点</li>
+<li><strong>Replica</strong>: 副本节点</li>
+<li><strong>Client</strong>: 客户端，用于向共识集群发送消息，请求共识</li>
+<li><strong>View</strong>: 视图，Primary和replica共同达成的一个状态视图，所有节点都基于某个视图进行共识</li>
+<li><strong>Sequence Number</strong>：序列号，由主节点生成的序列号，用于标识共识轮次</li>
+</ul>
+<ul>
+<li>  <strong>Check Point</strong>: 检查点，如果某个序列号被确认，则成为检查点</li>
+<li>  <strong>Stable checkpoint</strong>:  稳定检查点，该检查点通常会被持久化</li>
+</ul>
 <h3 id="推定变量"><a href="#推定变量" class="headerlink" title="推定变量"></a>推定变量</h3><hr>
 <blockquote>
 <p>笔者在撰写本小节的时候，阅读了很多博客和文章，很多解释都模棱两可，没有真正讲清楚，我也尝试来解释一下 3f + 1的问题。</p>
@@ -225,33 +236,105 @@
 <p>如果我们访问的|Q|个节点都是宕机节点，其下界可以保证我们一定能够得到一个结果；而其上界则缩小了其能够访问的节点数量上限，虽然我们依旧可以访问$|N|$个节点，但是可以确定的是其中$|F|$次访问是没有意义的。</p>
 <p>但是这个时候如果访问的这 $|N| -|F|$个节点恰好都是拜占庭节点呢？我们也不知道哪些节点是拜占庭节点，这个问题是下面的“安全性”要求需要解决的。</p>
 </blockquote>
+<img src="PBFT%E7%AE%97%E6%B3%95%E5%85%B3%E9%94%AE%E6%A6%82%E8%A6%81.assets/image-20201207195550777.png" alt="image-20201207195550777" style="zoom:50%;" />
+
+
+
 <p>（2）Safety,安全性要求。已知拜占庭节点和正常节点一样发送消息，但是会发送错误的消息误导。</p>
 <p>一般来讲，在访问集群的时候是有两个过程的，一个是写(w)过程，一个是读(r)过程，经过了两次交互，每次交互的节点集群子集是不一定相同的，我们把第一次写过程访问的集群称为$Q_w$，把第二次读过程访问的集群称为$Q_r$。</p>
 <p>实际上我们无法确定写操作的响应节点集群$Q_w$和读操作的响应节点集群$Q_r$是否是同一组。所以在上述基础上，要求读写集群需要有交集（quorum intersection），即 $|Q_w \cap Q_r| \neq \emptyset$。只有这样，我们才能够读到正确的写入的结果。 但是如果交集正好都是拜占庭节点的话那就被完美骗过了（读过程和写过程都信任了拜占庭节点），所以，又要求 $|Q_w \cap Q_r| &gt; f$ ，即读写集合数量都至少要比$f$大，那么我们可以得到 $|Q_w \cap Q_r| = (|N|-|F|) + (|N|-|F|) - |N| &gt; |F|$ ，因为节点是整数，所以有:<br>$$<br>(|N|-|F|) + (|N|-|F|) - |N| \geq |F| + 1 \Rightarrow |N| \geq 3|F| + 1<br>$$</p>
 <p>所以我们能够得到 $f = ⌊\frac{n-1}{3}⌋$，此时能够确定的 $quorum = |Q| = n-f \geq 2f + 1 $</p>
 <p>可以简单推出:</p>
 <p>$$<br>quorum \geq \lceil \frac{N+f+1}{2} \rceil<br>$$</p>
+<img src="PBFT%E7%AE%97%E6%B3%95%E5%85%B3%E9%94%AE%E6%A6%82%E8%A6%81.assets/image-20201207195613996.png" alt="image-20201207195613996" style="zoom:50%;" />
+
+
 <blockquote>
-<p> 为什么<code>PBFT</code>算法只能容忍<code>（n-1)/3</code>个作恶节点？</p>
-<p>“节点总数是<code>n</code>，其中作恶节点有<code>f</code>，那么剩下的正确节点为<code>n- f</code>，意味着只要收到<code>n - f</code>个消息就能做出决定，但是这<code>n - f</code>个消息有可能有<code>f</code>个是由作恶节点冒充的，那么正确的消息就是<code>n-f-f</code>个，为了多数一致，正确消息必须占多数，也就是 n - f - f &gt; f 但是节点必须是整数个，所以 n 最少是 3f+1 个。”</p>
+<p> <code>3f+1</code> 的一种解释：</p>
+<p>节点总数是<code>n</code>，其中作恶节点有<code>f</code>，那么剩下的正确节点为<code>n- f</code>，意味着只要收到<code>n - f</code>个消息就能做出决定，但是这<code>n - f</code>个消息有可能有<code>f</code>个是由作恶节点冒充的，那么正确的消息就是<code>n-f-f</code>个，为了多数一致，正确消息必须占多数，也就是 <code>n - f - f &gt; f</code> 但是节点必须是整数个，所以 <code>n</code> 最少是 <code>3f+1</code> 个。</p>
 </blockquote>
-<p>笔者认为上述解释是有问题的，首先作恶节点有<code>f</code>个，剩下的正确节点有<code>n-f</code>个，但是并不意味着收到 <code>n-f</code>个消息就能做出决定，我可以收到 <code>f +1</code> 个消息就可以做出决定，当然 <code>f+1</code> 个消息有可能有<code>f</code>个都是错误的，无法确定，所以可以调整为收到 <code>2f + 1</code>个消息确定结果，<code>2f + 1</code> 是否等于 <code>N- f</code> 从正向推是推不出来的，因为 <code>2f + 1</code> 可以等于 <code>N</code> ，也可以等于<code>N-1</code>等等，上述论断的一个隐含信息就是宕机的诚实节点数量也是<code>f</code>个，这样是可以退出上述论断的，但这个其实是没有预先假设的，其实不够严谨。</p>
+<p>笔者认为上述解释是有问题的，首先作恶节点有<code>f</code>个，剩下的正确节点有<code>n-f</code>个，但是并不意味着收到 <code>n-f</code>个消息就能做出决定，我可以收到 <code>f+1</code> 个消息就可以做出一种决定，诚然 <code>f+1</code> 个消息有可能有<code>f</code>个都是错误的，实际可能无法确定结果，所以可以调整为收到 <code>2f + 1 </code>个消息确定结果,因为 <code>f + f + 1</code> 个消息肯定有 <code>f+1</code>个消息是诚实节点发出的，并且为多数，但也没有说明这是最小值；<code>2f + 1</code> 即前面讨论的<code>quorum</code>，但是 <code>quorum</code>与 <code>N - f</code>的关系也其实是没有讲清楚的，因为 <code>2f + 1</code> 可以等于 <code>N</code> ，也可以等于<code>N-1</code>等等，综上，其实这种解释不够严谨，但是比较好理解。</p>
 <blockquote>
-<p>对于 pbft 算法，因为 pbft 算法的除了需要支持容错故障节点之外，还需要支持容错作恶节点。假设集群节点数为 N，有问题的节点为 f。有问题的节点中，可以既是故障节点，也可以是作恶节点，或者只是故障节点或者只是作恶节点。那么会产生以下两种极端情况：</p>
+<p><code>3f+1</code>的另一种解释：</p>
+<p>对于 pbft 算法，因为 pbft 算法的除了需要支持容错故障节点之外，还需要支持容错作恶节点。假设集群节点数为 <code>N</code>，有问题的节点为 <code>f</code>。有问题的节点中，可以既是故障节点，也可以是作恶节点，或者只是故障节点或者只是作恶节点。那么会产生以下两种极端情况：</p>
 <ol>
-<li> 第一种情况，f 个有问题节点既是故障节点，又是作恶节点，那么根据小数服从多数的原则，集群里正常节点只需要比 f 个节点再多一个节点，即 f+1 个节点，确节点的数量就会比故障节点数量多，那么集群就能达成共识。也就是说这种情况支持的最大容错节点数量是 （n-1）/2。</li>
-<li> 第二种情况，故障节点和作恶节点都是不同的节点。那么就会有 f 个问题节点和 f 个故障节点，当发现节点是问题节点后，会被集群排除在外，剩下 f 个故障节点，那么根据小数服从多数的原则，集群里正常节点只需要比 f 个节点再多一个节点，即 f+1 个节点，确节点的数量就会比故障节点数量多，那么集群就能达成共识。所以，所有类型的节点数量加起来就是 f+1 个正确节点，f 个故障节点和 f 个问题节点，即 3f+1=n。</li>
+<li> 第一种情况，<code>f</code> 个有问题节点既是故障节点，又是作恶节点，那么根据小数服从多数的原则，集群里正常节点只需要比<code> f</code> 个节点再多一个节点，即<code> f+1</code> 个节点，确节点的数量就会比故障节点数量多，那么集群就能达成共识。也就是说这种情况支持的最大容错节点数量是 <code>（n-1）/2</code>。</li>
+<li> 第二种情况，故障节点和作恶节点都是不同的节点。那么就会有<code> f</code> 个问题节点和<code> f</code> 个故障节点，当发现节点是问题节点后，会被集群排除在外，剩下 <code>f</code> 个故障节点，那么根据小数服从多数的原则，集群里正常节点只需要比<code> f</code> 个节点再多一个节点，即<code> f+1</code> 个节点，正确节点的数量就会比故障节点数量多，那么集群就能达成共识。所以，所有类型的节点数量加起来就是<code> f+1</code> 个正确节点，<code>f</code> 个故障节点和 <code>f</code> 个问题节点，即 <code>3f+1=n</code>。</li>
 </ol>
 </blockquote>
-<h2 id="常规流程"><a href="#常规流程" class="headerlink" title="常规流程"></a>常规流程</h2><h3 id="leader-打包区块-¶"><a href="#leader-打包区块-¶" class="headerlink" title="leader 打包区块 ¶"></a>leader 打包区块 <a href="#leader" title="永久链接至标题">¶</a></h3><p>PBFT 共识算法中，共识节点轮流出块，每一轮共识仅有一个 leader 打包区块，leader 索引通过公式<code>(block_number + current_view) % consensus_node_num</code>计算得出。</p>
-<p>节点计算当前 leader 索引与自己索引相同后，就开始打包区块。区块打包主要由 PBFTSealer 线程完成，Sealer 线程的主要工作如下图所示：</p>
-<p><img src="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/_images/sealer.png"></p>
-<ul>
-<li>  <strong>产生新的空块</strong>: 通过区块链 (BlockChain) 获取当前最高块，并基于最高块产生新空块(将新区块父哈希置为最高块哈希，时间戳置为当前时间，交易清空)；</li>
-<li>  <strong>从交易池打包交易</strong>: 产生新空块后，从交易池中获取交易，并将获取的交易插入到产生的新区块中；</li>
-<li>  <strong>组装新区块</strong>: Sealer 线程打包到交易后，将新区块的打包者 (Sealer 字段) 置为自己索引，并根据打包的交易计算出所有交易的 transactionRoot；</li>
-<li>  <strong>产生 Prepare 包</strong>: 将组装的新区块编码到 Prepare 包内，通过 PBFTEngine 线程广播给组内所有共识节点，其他共识节点收到 Prepare 包后，开始进行三阶段共识。</li>
+<p>这种解释，第一种情况是没有问题的，很好理解，但是在第二种情况中，故障节点和作恶节点是否加在一起是“有问题节点”这个点其实有点混乱了，按照第二种解释的说法，故障节点和作恶节点都有<code>f</code>个，那当然很容易就推出来需要<code>f+1</code>个节点正常，<code>N= 3f+1</code>，但其实应该是，故障节点和作恶节点总共加起来一共 <code>f</code> 个，这种解释其实举个例子就可以说明了，假设我们现在一共有4个节点，其中一个是拜占庭节点，一个是宕机节点，集群中只有两个节点可以正常工作，其实整个算法运行不起来的。</p>
+<h2 id="主要思想"><a href="#主要思想" class="headerlink" title="主要思想"></a>主要思想</h2><p>PBFT 的主要思想是：</p>
+<ol>
+<li>将节点数量固定（3f +1）</li>
+<li>通过三阶段来处理恶意主节点</li>
+<li>通过更大的quorum集合来解决共识失效</li>
+<li>通过授权通信（消息签名）解决消息认证问题</li>
+</ol>
+<h2 id="常规流程"><a href="#常规流程" class="headerlink" title="常规流程"></a>常规流程</h2><h3 id="初始定义"><a href="#初始定义" class="headerlink" title="初始定义"></a>初始定义</h3><ul>
+<li><code>i</code>  : 节点ID (replica id) ，应该是在 $[0, N-1]$ 范围内的值</li>
+<li><code>v#</code> : 视图编号(view number), 初始为零，用 <code>v#</code> 表示</li>
+<li><code>Primary</code> : 主节点，通常采用模运算取得: <code>Primary = v# mod N​</code></li>
+<li><code>log</code> : 操作日志， 通常记录了当前收到的消息,形式为 <code>&lt;op, seq#, status&gt;</code> <ul>
+<li> <code>seq#</code> 为 sequence number</li>
+<li><code>status</code> 为 <code>pre-prepared</code> 、<code>prepared</code>或者是<code>committed</code></li>
+<li><code>op</code> 即本轮共识的具体操作，可以是数据库操作，也可以是区块写入操作</li>
 </ul>
+</li>
+<li><code>d(op)</code> ，是<code>op</code>的密码学摘要信息</li>
+</ul>
+<h3 id="标准算法流程"><a href="#标准算法流程" class="headerlink" title="标准算法流程"></a>标准算法流程</h3><p><strong>算法示意图</strong></p>
+<img src="https://tva1.sinaimg.cn/large/0081Kckwly1glfiz29ybcj30vr0itq5x.jpg" alt="image-20201207193837576" style="zoom:50%;" />
+
+<div><p style="font-size: 12px; color: #3f3f3f; text-align: center;">BFT算法主要流程</p></div>
+
+<p>也看到过其他的流程示意图，包括原论文当中的示意图：</p>
+<img src="PBFT%E7%AE%97%E6%B3%95%E5%85%B3%E9%94%AE%E6%A6%82%E8%A6%81.assets/image-20201207194044414.png" alt="image-20201207194044414" style="zoom:50%;" />
+
+<p>我个人觉得其实有一些缺陷，因为有可能在一开始客户端发送给的节点有可能不是主节点，或者发送的节点是拜占庭节点，相当于主节点的选择交给客户端来决定了，略有缺陷，所以我选了一张更加合适的图作为示意。</p>
+<p><strong>算法核心过程（正常流程）</strong></p>
+<ul>
+<li><strong>STEP 1</strong>: 客户端发送请求给主节点（或者发给所有节点），图示是发给所有节点的</li>
+<li><strong>STEP 2</strong>: 主节点发送 <code>pre-prepare</code>消息给所有节点<ul>
+<li>主节点信息包括 <code>&lt;PRE-PREPARE, v#, seq#, op, d(op)&gt;</code></li>
+<li>主节点在本地存储了一条日志，标记本节点为 <code>pre-prepared</code>状态</li>
+<li>注意，主节点也有可能是恶意节点，可能出现如下异常<ul>
+<li>针对同一个 <code>op</code> 发送不同的 <code>seq#</code> 给不同的从节点</li>
+<li>发送重复的<code>seq#</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>STEP 3</strong>: 从节点检查主节点发送的 <code>pre-prepare</code>消息，如果验证通过<ul>
+<li>记录上述操作到日志中，标记本节点为 <code>pre-prepared</code>状态</li>
+<li>发送 <code>prepare</code>消息给所以偶节点</li>
+<li><code>prepare</code>消息包括<code>&lt;PREPARE, i, v#, seq#, d(op)&gt;</code></li>
+<li>该过程需要所有节点相互广播</li>
+<li>何时会不接受主节点发来的 <code>pre-prepare</code> 消息呢<ul>
+<li>一种情况是如果从节点接受到了一条 <code>pre-prepare</code> 消息，消息里的 <code>v#</code> 和 <code>seq#</code> 在之前收到里的消息是曾经出现过的，但是 <code>d(op)</code> 和 <code>op</code> 却和之前的消息不一致</li>
+<li>另一种请求编号不在高低水位<code> water mark</code>之间</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>STEP 4</strong>: 从节点匹配所有的 <code>prepare</code>消息，直到满足 <code>2f + 1</code> ，(包括自己发出的消息)<ul>
+<li>记录上述操作到日志中，标记本节点为 <code>prepared</code>状态</li>
+<li>发送 <code>commit</code> 消息给所有节点</li>
+<li><code>commit</code>消息包括 <code>&lt;COMMIT, i, v#, seq#, d(op)&gt;</code></li>
+<li>这个节点已经能够确认所有的诚实节点已经准备好提交相同的值了</li>
+</ul>
+</li>
+<li><strong>STEP 5</strong>: 从节点匹配所有的 <code>commit</code>消息，直到满足 <code>2f + 1</code>，(包括自己发出的消息)<ul>
+<li>记录上述操作到日志中，标记本节点为 <code>committed</code>状态</li>
+<li>执行本次操作</li>
+<li>发送结果给到客户端</li>
+</ul>
+</li>
+<li><strong>STEP 6</strong>: 客户端收到超过<code>2f+1</code>的一致消息则确认当前结果成功</li>
+</ul>
+<h3 id="一种优化流程"><a href="#一种优化流程" class="headerlink" title="一种优化流程"></a>一种优化流程</h3><blockquote>
+<p>以下是公开资料收集的 Hyperchain 优化之后的RBFT算法</p>
+</blockquote>
+<p>RBFT 的常规流程保证了区块链各共识节点以相同的顺序处理来自客户端的交易。RBFT 同 PBFT 的容错能力相同，需要至少 3f+1 个节点才能容忍 f 个拜占庭错误。下图为最少集群节点数下的共识流程，其 N=4，f=1。图中的 Primary1 为共识节点动态选举出来的主节点，负责对客户端发来的交易进行排序打包，Replica2，3，4 为从节点。所有节点执行交易的逻辑相同并能够在主节点失效时参与新主节点的选举。</p>
 <p>RBFT 共识保留了 PBFT 原有的三阶段处理流程（PrePrepare、Prepare、Commit）的同时增加了重要的交易验证（validate）环节，在保证对交易执行顺序达成共识的同时也保证了对区块验证结果的共识。</p>
 <p><img src="https://hyperchain.readthedocs.io/zh_CN/latest/_images/normal.png"></p>
 <p>RBFT 常规流程在原生的 PBFT 算法中穿插了交易验证环节，主节点将交易打包成块后先行验证，并将验证结果包含到 PrePrepare 消息中进行全网广播，这样 PrePrepare 消息中既包含了排好序的交易信息也包含了区块验证结果。从节点在收到主节点的 PrePrepare 消息后先检查消息的合法性，检查通过后广播 Prepare 消息表明本节点同意主节点的排序结果；在收到（quorum-1）个 Prepare 消息后从节点才会开始验证区块，并将验证结果与主节点的验证结果进行比对，比对结果一致则广播 Commit 表明本节点同意主节点的验证结果，否则直接发起 ViewChange 表明本节点认为主节点有异常行为。RBFT 常规流程具体分为如下几个步骤：</p>
@@ -262,106 +345,38 @@
 <li> <strong>Commit 阶段：</strong>从节点在收到（quorum-1）个 Prepare 消息以及相应的 PrePrepare 消息后进行验证，并将验证结果与主节点写入 PrePrepare 消息中的验证结果进行比对，比对结果一致则广播 Commit 表明本节点同意主节点的验证结果，否则直接发起 ViewChange 表明本节点认为主节点存在异常行为，需要切换主节点；</li>
 <li> <strong>写入账本：</strong>所有共识节点在收到 quorum 个 Commit 消息后将执行结果写入本地账本。</li>
 </ol>
-<p>Hyperchain 通过在共识模块中加入验证机制，可以保证从节点对主节点的每一次排序打包的结果进行校验，尽早地发现主节点的拜占庭行为，提升了系统的稳定性。</p>
-<ol start="3">
-<li>RBFT 常规流程 <a href="#id3" title="永久链接至标题">¶</a></li>
-</ol>
-<hr>
-<p>RBFT 的常规流程保证了区块链各共识节点以相同的顺序处理来自客户端的交易。RBFT 同 PBFT 的容错能力相同，需要至少 3f+1 个节点才能容忍 f 个拜占庭错误。下图为最少集群节点数下的共识流程，其 N=4，f=1。图中的 Primary1 为共识节点动态选举出来的主节点，负责对客户端发来的交易进行排序打包，Replica2，3，4 为从节点。所有节点执行交易的逻辑相同并能够在主节点失效时参与新主节点的选举。</p>
-<h3 id="常规流程-¶"><a href="#常规流程-¶" class="headerlink" title="常规流程 ¶"></a>常规流程 <a href="#id4" title="永久链接至标题">¶</a></h3><p>RBFT 共识保留了 PBFT 原有的三阶段处理流程（PrePrepare、Prepare、Commit）的同时增加了重要的交易验证（validate）环节，在保证对交易执行顺序达成共识的同时也保证了对区块验证结果的共识。</p>
-<p><img src="https://hyperchain.readthedocs.io/zh_CN/latest/_images/normal.png"></p>
-<p>RBFT 常规流程在原生的 PBFT 算法中穿插了交易验证环节，主节点将交易打包成块后先行验证，并将验证结果包含到 PrePrepare 消息中进行全网广播，这样 PrePrepare 消息中既包含了排好序的交易信息也包含了区块验证结果。从节点在收到主节点的 PrePrepare 消息后先检查消息的合法性，检查通过后广播 Prepare 消息表明本节点同意主节点的排序结果；在收到（quorum-1）个 Prepare 消息后从节点才会开始验证区块，并将验证结果与主节点的验证结果进行比对，比对结果一致则广播 Commit 表明本节点同意主节点的验证结果，否则直接发起 ViewChange 表明本节点认为主节点有异常行为。RBFT 常规流程具体分为如下几个步骤：</p>
-<ol>
-<li> <strong>交易转发阶段：</strong>客户端将交易发送到区块链中的任意节点（包括共识节点与记账节点），其中记账节点在收到交易后会主动转发给与其相连的共识节点；而共识节点在收到客户端的交易后将其广播给其他共识节点，这样所有共识节点的交易池中都会维护一份完整的交易列表；</li>
-<li> <strong>PrePrepare 阶段：</strong>主节点按照如下策略进行打包：用户可以根据需求自定义打包的超时时间（batch timeout）与打包的最大区块大小（batch size），主节点在超时时间内收集到了足够多（超过最大区块大小个数）的交易或者超时时间到达后仍未收集到足够多的交易都会触发主节点的打包事件。主节点将交易按照接收的时间顺序打包成块，并进行验证，计算执行结果，最后将定序好的交易信息连同验证结果等写入 PrePrepare 消息中广播给所有共识节点，开始三阶段处理流程；</li>
-<li> <strong>Prepare 阶段：</strong>从节点在收到主节点的 PrePrepare 消息后，首先进行消息合法性检查，检查当前的视图与区块号等信息，检查通过后向共识节点广播 Prepare 消息；</li>
-<li> <strong>Commit 阶段：</strong>从节点在收到（quorum-1）个 Prepare 消息以及相应的 PrePrepare 消息后进行验证，并将验证结果与主节点写入 PrePrepare 消息中的验证结果进行比对，比对结果一致则广播 Commit 表明本节点同意主节点的验证结果，否则直接发起 ViewChange 表明本节点认为主节点存在异常行为，需要切换主节点；</li>
-<li> <strong>写入账本：</strong>所有共识节点在收到 quorum 个 Commit 消息后将执行结果写入本地账本。</li>
-</ol>
-<p>Hyperchain 通过在共识模块中加入验证机制，可以保证从节点对主节点的每一次排序打包的结果进行校验，尽早地发现主节点的拜占庭行为，提升了系统的稳定性。</p>
-<h3 id="检查点-¶"><a href="#检查点-¶" class="headerlink" title="检查点 ¶"></a>检查点 <a href="#id5" title="永久链接至标题">¶</a></h3><p>为了防止运行过程中产生过多的消息缓存，共识节点需要定时清理一些无用的消息缓存。RBFT 通过引入 PBFT 算法中的检查点（checkpoint）机制进行垃圾回收并将检查点的大小 K 固定设置为 10。节点在写入到 K 的整数倍个区块后达到一个检查点，并广播该检查点的信息，待收集到其他（quorum-1）个共识节点相同的检查信息后就达到了一个稳定检查点（stable checkpoint），随后即可清理该检查点之前的一些消息缓存，保证了运行过程中消息缓存不会无限制地增长。</p>
-<h3 id="交易池-¶"><a href="#交易池-¶" class="headerlink" title="交易池 ¶"></a>交易池 <a href="#id6" title="永久链接至标题">¶</a></h3><p>交易池是共识节点用于缓存交易的场所，交易池的存在一方面限制了客户端发送交易的频率，另一方面也减少了主节点的带宽压力。首先，通过限制交易池的缓存大小，Hyperchain 平台可以在交易池达到限制大小后拒绝接收来自客户端的交易，这样，在合理评估机器性能的情况下，通过合理设置交易缓存大小，可以最大限度地利用机器性能而又不至于出现异常。其次，共识节点在接收到来自客户端的交易后先将其存到自己的交易池中，随后向全网其他共识节点广播该条交易，保证了所有共识节点都维护了一份完整的交易列表；主节点在打包后只需要将交易哈希列表放到 PrePrepare 消息中进行广播即可，而不用将完整的交易列表打包进行广播，大大减轻了主节点的出口带宽压力。如果从节点在验证之前发现缺少了某些交易，也只需要向主节点索取缺少的那些交易而不用索取整个区块里面所有的交易。</p>
-<ol start="4">
-<li>RBFT 视图变更 <a href="#id7" title="永久链接至标题">¶</a></li>
-</ol>
-<hr>
-<p>RBFT 视图变更能够解决主节点成为拜占庭节点的问题。在 RBFT 算法中，参与共识的节点可根据角色分为主节点和从节点。主节点最重要的功能是将收到的交易按照一定策略打包成块，为交易定序，并让所有节点按照此顺序执行。然而，如果主节点发生宕机、系统错误或者被攻占（即成为拜占庭节点），从节点需要及时发现主节点异常并选举产生新的主节点。这将是所有 BFT 类算法为满足稳定性必须要解决的问题。</p>
-<h3 id="视图-¶"><a href="#视图-¶" class="headerlink" title="视图 ¶"></a>视图 <a href="#id8" title="永久链接至标题">¶</a></h3><p>在 RBFT 与 PBFT 中，都引入了视图（View）概念，即每次更换一个主节点的同时都会切换视图。目前 RBFT 采用轮换的方式切换主节点，并且 view 从 0 开始只增不减。当前的 view 和总节点数量 N 决定了主节点 id：</p>
-<p>$$PrimaryId=(view+1)modN$$</p>
-<h3 id="可检测到的拜占庭行为-¶"><a href="#可检测到的拜占庭行为-¶" class="headerlink" title="可检测到的拜占庭行为 ¶"></a>可检测到的拜占庭行为 <a href="#id9" title="永久链接至标题">¶</a></h3><p>目前 RBFT 能够检测到的主节点的拜占庭行为主要有 2 种场景：</p>
-<ol>
-<li> 主节点停止工作，不再发送任何消息；</li>
-<li> 主节点发送错误的消息。</li>
-</ol>
-<p>对于场景一，RBFT 由 nullRequest 机制保证，行为正确的主节点会在没有交易发生时，向所有从节点定时发送 nullRequest 来维持正常连接。如果从节点在规定时间内没有收到 nullRequest，则会触发 ViewChange 流程选举新的主节点。</p>
-<p>对于场景二，从节点会对主节点发出的消息进行验证，如上一节中提到的包含在 PrePrepare 消息中的验证结果，如果从节点验证不通过的话，会直接发起 ViewChange 流程选举新的主节点。</p>
-<p>此外，RBFT 还提供了可配置的 ViewChangePeriod 选项。用户可以根据需要设置此选项，每写入一定数量区块后进行主动的 ViewChange 轮换主节点，一来能够缓解主节点作为打包节点的额外压力，二来也使所有参与共识的节点都能承担一定的打包工作，保证了公平性。</p>
-<h3 id="算法流程"><a href="#算法流程" class="headerlink" title="算法流程"></a>算法流程</h3><p>在算法开始阶段，<code>主节点</code>由 <code>p = v mod n</code>计算得出，随着<code>v</code>的增长可以看到<code>p</code>不断变化，论文里目前还是轮流坐庄的方法，这里是一个优化点。</p>
-<p>首先客户端发送消息<code>m</code>给主节点<code>p</code>，主节点就开始了<code>PBFT</code>三阶段协议，三个阶段分别是<code>预准备（pre-prepare）</code>，<code>准备（prepare）</code>，<code>提交（commit）</code>。 其中<code>pre-prepare</code>和<code>prepare</code>阶段最重要的任务是保证，同一个<code>主节点</code>发出的请求在同一个<code>视图（view）</code>中的顺序是一致的，<code>prepare</code>和<code>commit</code>阶段最重要的任务是保证请求在不同<code>视图</code>之间的顺序是一致的。</p>
-<ul>
-<li>  主节点收到客户端发送来的消息后，构造<code>pre-prepare</code>消息结构体<code>&lt; &lt;PRE-PREPARE, v, n, d&gt;, m &gt;</code>广播到集群中的其它节点。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">PRE-PREPARE标识当前消息所处的协议阶段。</span><br><span class="line">v标识当前视图编号。</span><br><span class="line">n为主节点广播消息的一个唯一递增序号。</span><br><span class="line">d为m的消息摘要。</span><br><span class="line">m为客户端发来的消息。</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>  <code>副本(backup)</code>收到主节点请求后，会对消息进行检查，检查通过会存储在本节点。当节点收到<code>2f+1</code>（包括自己）个相同的消息后，会进入<code>PREPARE</code>状态，广播消息<code>&lt; &lt;PREPARA, v, n, d, i&gt; &gt;</code>，其中<code>i</code>是本节点的编号。对消息的有效性有如下检查：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a: 检查收到的消息体中摘要d，是否和自己对m生成的摘要一致，确保消息的完整性。</span><br><span class="line">b: 检查v是否和当前视图v一致。</span><br><span class="line">c: 检查序号n是否在水线h和H之间，避免快速消耗可用序号。</span><br><span class="line">d: 检查之前是否接收过相同序号n和v，但是不同摘要d的消息。</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>  <code>副本</code>收到<code>2f+1</code>（包括自己）个一致的<code>PREPARE</code>消息后，会进入<code>COMMIT</code>阶段，并且广播消息<code>&lt; COMMIT, v, n, D(m), i &gt;</code>给集群中的其它节点。在收到<code>PREPARE</code>消息后，副本同样也会对消息进行有效性检查，检查的内容是上文<code>a, b, c</code>。  </p>
-</li>
-<li><p>  <code>副本</code>收到<code>2f+1</code>（包括自己）个一致的<code>COMMIT</code>个消息后执行<code>m</code>中包含的操作，其中，如果有多个<code>m</code>则按照序号<code>n</code>从小到大执行，执行完毕后发送执行成功的消息给客户端。  </p>
-</li>
-</ul>
-<p>下面就是算法的流程图：</p>
-<p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glfdvsev02j30is08iab1.jpg"></p>
-<p>欢迎关注我的<a href="https://link.zhihu.com/?target=http://qyuan.top/">博客</a>（qyuan.top），不定期分享一些区块链底层技术文章，博客排版要比知乎好一点（ㄟ (▔, ▔) ㄏ）。</p>
-<h2 id="2-3-算法核心三阶段流程"><a href="#2-3-算法核心三阶段流程" class="headerlink" title="2.3. 算法核心三阶段流程"></a>2.3. 算法核心三阶段流程</h2><p>下面介绍 pbft 算法的核心三阶段流程，如下图所示：</p>
-<p><img src="https://pic4.zhimg.com/v2-ab3bab245c17269625d7ebc56c3848c3_r.jpg"></p>
-<p>算法的核心三个阶段分别是 pre-prepare 阶段（预准备阶段），prepare 阶段（准备阶段）， commit 阶段（提交阶段）。图中的 C 代表客户端，0，1，2，3 代表节点的编号，打叉的 3 代表可能是故障节点或者是问题节点，这里表现的行为就是对其它节点的请求无响应。0 是主节点。整个过程大致是如下：</p>
-<p>首先，客户端向主节点发起请求，主节点 0 收到客户端请求，会向其它节点发送 pre-prepare 消息，其它节点就收到了 pre-prepare 消息，就开始了这个核心三阶段共识过程了。</p>
-<ol>
-<li> Pre-prepare 阶段：节点收到 pre-prepare 消息后，会有两种选择，一种是接受，一种是不接受。什么时候才不接受主节点发来的 pre-prepare 消息呢？一种典型的情况就是如果一个节点接受到了一条 pre-pre 消息，消息里的 v 和 n 在之前收到里的消息是曾经出现过的，但是 d 和 m 却和之前的消息不一致，或者请求编号不在高低水位之间（高低水位的概念在下文会进行解释），这时候就会拒绝请求。拒绝的逻辑就是主节点不会发送两条具有相同的 v 和 n ，但 d 和 m 却不同的消息。</li>
-<li> Prepare 阶段：节点同意请求后会向其它节点发送 prepare 消息。这里要注意一点，同一时刻不是只有一个节点在进行这个过程，可能有 n 个节点也在进行这个过程。因此节点是有可能收到其它节点发送的 prepare 消息的。在一定时间范围内，如果收到超过 2f 个不同节点的 prepare 消息，就代表 prepare 阶段已经完成。</li>
-<li> Commit 阶段：于是进入 commit 阶段。向其它节点广播 commit 消息，同理，这个过程可能是有 n 个节点也在进行的。因此可能会收到其它节点发过来的 commit 消息，当收到 2f+1 个 commit 消息后（包括自己），代表大多数节点已经进入 commit 阶段，这一阶段已经达成共识，于是节点就会执行请求，写入数据。</li>
-</ol>
-<p>处理完毕后，节点会返回消息给客户端，这就是 pbft 算法的全部流程。为了更清晰的展现 这个过程和一些细节，下面以流程图来表示这个过程：</p>
-<p><img src="https://pic4.zhimg.com/v2-451165a9d6de89d6b6f0e7468b71049b_r.jpg"></p>
+<h3 id="检查点机制"><a href="#检查点机制" class="headerlink" title="检查点机制"></a>检查点机制</h3><p>在上述过程当中，我们发现整体流程都写入了很多日志，基本上每一轮都会产生很多日志缓存；如此下去明显系统存储是不够用的，为了解决上述问题，PBFT引入了垃圾回收（GC）机制，通过检查点 (checkpoint)来进行垃圾回收。</p>
+<p>共识过程中的日志<code>log</code>需要一直保存在节点中，一直到这个日志状态已经被至少 <code>f+1</code> 个非拜占庭副本节点处理过了，并且在view-change过程当中需要能够将这个已经处理过的日志证明给其他节点。</p>
+<p>进一步地，还有一种情况是，如果一些副本节点因为某些原因落后了，但是其他非拜占庭节点已经把一些消息都清除了，落后的节点无法通过日志跟上，只能通过直接同步状态跟上，其他节点也需要证明上述状态是合法的。</p>
+<p>当然生成这样的证明的成本是高昂的，所以我们不需要每个区块都生成一次，通常来说周期性生成一次比较好，一般来说这个周期间隔是固定的（比如每100个 <code>seq#</code> ） ，当共识轮次能够被100整除时，将会生成一个检查点(checkpoint)，经过共识确认的检查点被称为稳定检查点<code>stable checkpoint</code>，当然稳定检查点需要带有至少<code>2f+1</code>个节点签名，即所谓的proof。生成稳定检查点之后，就可以清除该检查点之前的消息缓存，实现GC。</p>
+<p><strong>检查点生成过程</strong></p>
+<p>当一个 replica <code>i</code>生成了一个检查点，将会封装并广播消息 <code>&lt;CHECKPOINT, seq#, d(state), i&gt;</code>，所有的备份节点收到了<code>2f+1</code>个拥有相同的 <code>d(state)</code>的检查点消息（包括自己的消息），将会生成稳定检查点，而 <code>2f+1</code>个检查点消息即稳定检查点证明<code>proof</code>。 其中<code>d(state)</code>是当前状态摘要信息。</p>
+<p>当稳定检查点生成之后，将会删除稳定检查点之前的 <code>pre-prepare</code>、<code>prepare</code>、<code>commit</code>消息，当然也会删掉更早的检查点消息。</p>
+<p><strong>状态摘要机制</strong></p>
+<p>状态摘要可以通过增量哈希实现，减少计算量。</p>
+<p><strong>水位线机制</strong></p>
+<p>水位线机制用于限制哪些范围的消息可以被接受。水位线包括低水位线(low-water mark) <code>h</code>和高水位线(high water mark) <code>H = h + k</code>。</p>
+<p>通常来讲，低水位线是最近的一个稳定检查点的<code>seq#</code>，而高水位线需要在低水位线上加上一个常量<code>k</code>, 常量 <code>k</code> 需要足够大，避免共识一致需要等检查点稳定，但是又不能让共识过程跑太远，避免稳定检查点生成失败后大量共识过程需要重做。</p>
+<p>其实水位线机制是为了让检查点生成的时候不阻塞共识过程，但又不至于共识过程跑得太快，检查点生成太慢，如果一直领先很多，检查点就没有意义了。</p>
+<h3 id="密码学签名"><a href="#密码学签名" class="headerlink" title="密码学签名"></a>密码学签名</h3><p>TODO</p>
+<p>为了防止节点作恶，PBFT 共识过程中每个共识节点均对其发送的消息进行签名，对收到的消息包进行验签名，因此每个节点均维护一份公私钥对，私钥用于对发送的消息进行签名，公钥作为节点 ID，用于标识和验签。</p>
 <blockquote>
-<p>注解：<br>V：当前视图的编号。视图的编号是什么意思呢？比如当前主节点为 A，视图编号为 1，如果主节点换成 B，那么视图编号就为 2，这个概念和 raft 的 term 任期是很类似的。<br>N：当前请求的编号。主节点收到客户端的每个请求都以一个编号来标记。<br>M：消息的内容<br>d 或 D（m）：消息内容的摘要<br>i： 节点的编号</p>
+<p><strong>节点 ID</strong> : 共识节点签名公钥和共识节点唯一标识, 一般是 64 字节二进制串，其他节点使用消息包发送者的节点 ID 对消息包进行验签</p>
 </blockquote>
-<h2 id="2-4-checkpoint-、stable-checkpoint-和高低水位"><a href="#2-4-checkpoint-、stable-checkpoint-和高低水位" class="headerlink" title="2.4.checkpoint 、stable checkpoint 和高低水位"></a>2.4.checkpoint 、stable checkpoint 和高低水位</h2><p>什么是 checkpoint 呢？ checkpoint 就是当前节点处理的最新请求序号。前文已经提到主节点收到请求是会给请求记录编号的。比如一个节点正在共识的一个请求编号是 101，那么对于这个节点，它的 checkpoint 就是 101。</p>
-<p>那什么是 stable checkpoint （稳定检查点）呢？stable checkpoint 就是大部分节点 （2f+1） 已经共识完成的最大请求序号。比如系统有 4 个节点，三个节点都已经共识完了的请求编号是 213 ，那么这个 213 就是 stable checkpoint 了。</p>
-<p>那设置这个 stable checkpoint 有什么作用呢？最大的目的就是减少内存的占用。因为每个节点应该记录下之前曾经共识过什么请求，但如果一直记录下去，数据会越来越大，所以应该有一个机制来实现对数据的删除。那怎么删呢？很简单，比如现在的稳定检查点是 213 ，那么代表 213 号之前的记录已经共识过的了，所以之前的记录就可以删掉了。</p>
-<p>那什么是高低水位呢？下面以一个示意图来进行解释：</p>
-<p><img src="https://pic4.zhimg.com/v2-38893c860e339ffbb86acbde654c8253_r.jpg"></p>
-<p>图中 A 节点的当前请求编号是 1039，即 checkpoint 为 1039，B 节点的 checkpoint 为 1133。当前系统 stable checkpoint 为 1034 。那么 1034 这个编号就是低水位，而高水位 H = 低水位 h+L ，其中 L 是可以设定的数值。因此图中系统的高水位为 1034+100=1134。</p>
-<p>举个例子：如果 B 当前的 checkpoint 已经为 1034，而 A 的 checkpoint 还是 1039 ，假如有新请求给 B 处理时，B 会选择等待，等到 A 节点也处理到和 B 差不多的请求编号时，比如 A 也处理到 1112 了，这时会有一个机制更新所有节点的 stabel checkpoint ，比如可以把 stabel checkpoint 设置成 1100 ，于是 B 又可以处理新的请求了，如果 L 保持 100 不变，这时的高水位就会变成 1100+100=1200 了。</p>
-<h2 id="2-5-ViewChange（视图更改）事件"><a href="#2-5-ViewChange（视图更改）事件" class="headerlink" title="2.5.ViewChange（视图更改）事件"></a>2.5.ViewChange（视图更改）事件</h2><p>当主节点挂了（超时无响应）或者从节点集体认为主节点是问题节点时，就会触发 ViewChange 事件， ViewChange 完成后，视图编号将会加 1 。下图展示 ViewChange 的三个阶段流程：</p>
-<p><img src="https://pic2.zhimg.com/v2-ad76a4d2972a51caa904942ec168c96d_r.jpg"></p>
-<p>如图所示， viewchange 会有三个阶段，分别是 view-change ， view-change-ack 和 new-view 阶段。从节点认为主节点有问题时，会向其它节点发送 view-change 消息，当前存活的节点编号最小的节点将成为新的主节点。当新的主节点收到 2f 个其它节点的 view-change 消息，则证明有足够多人的节点认为主节点有问题，于是就会向其它节点广播 New-view 消息。注意：从节点不会发起 new-view 事件。对于主节点，发送 new-view 消息后会继续执行上个视图未处理完的请求，从 pre-prepare 阶段开始。其它节点验证 new-view 消息通过后，就会处理主节点发来的 pre-prepare 消息，这时执行的过程就是前面描述的 pbft 过程。到这时，正式进入 v+1 （视图编号加 1）的时代了。</p>
-<p>为了更清晰的展现 ViewChange 这个过程和一些细节，下面以流程图来表示这个过程：</p>
-<p><img src="https://pic1.zhimg.com/v2-8a7ae919ae6e347bc8bd7cb46ef811e4_r.jpg"></p>
-<p>上图里红色字体部分的 O 集合会包含哪些 pre-prepare 消息呢？假设 O 集合里消息的编号范围：（min～max），则 Min 为 V 集合最小的 stable checkpoint ， Max 为 V 集合中最大序号的 prepare 消息。最后一步执行 O 集合里的 pre-preapare 消息，每条消息会有两种情况: 如果 max-min&gt;0，则产生消息 &lt;pre-prepare,v+1,n,d&gt; ；如果 max-min=0，则产生消息 &lt;pre-prepare,v+1,n,d(null)&gt;。</p>
-<h3 id="检查点"><a href="#检查点" class="headerlink" title="检查点"></a>检查点</h3><p>为了防止运行过程中产生过多的消息缓存，共识节点需要定时清理一些无用的消息缓存。RBFT 通过引入 PBFT 算法中的检查点（checkpoint）机制进行垃圾回收并将检查点的大小 K 固定设置为 10。节点在写入到 K 的整数倍个区块后达到一个检查点，并广播该检查点的信息，待收集到其他（quorum-1）个共识节点相同的检查信息后就达到了一个稳定检查点（stable checkpoint），随后即可清理该检查点之前的一些消息缓存，保证了运行过程中消息缓存不会无限制地增长。</p>
-<h3 id="交易池"><a href="#交易池" class="headerlink" title="交易池"></a>交易池</h3><p>交易池是共识节点用于缓存交易的场所，交易池的存在一方面限制了客户端发送交易的频率，另一方面也减少了主节点的带宽压力。首先，通过限制交易池的缓存大小，Hyperchain 平台可以在交易池达到限制大小后拒绝接收来自客户端的交易，这样，在合理评估机器性能的情况下，通过合理设置交易缓存大小，可以最大限度地利用机器性能而又不至于出现异常。其次，共识节点在接收到来自客户端的交易后先将其存到自己的交易池中，随后向全网其他共识节点广播该条交易，保证了所有共识节点都维护了一份完整的交易列表；主节点在打包后只需要将交易哈希列表放到 PrePrepare 消息中进行广播即可，而不用将完整的交易列表打包进行广播，大大减轻了主节点的出口带宽压力。如果从节点在验证之前发现缺少了某些交易，也只需要向主节点索取缺少的那些交易而不用索取整个区块里面所有的交易。</p>
-<h3 id="日志压缩"><a href="#日志压缩" class="headerlink" title="日志压缩"></a>日志压缩</h3><p><code>Pbft</code>算法在运行的过程中，日志会不断累积的，但是在实际的系统中，无论是从日志占用的磁盘空间，还是新节点加入集群，同步日志的网络消耗来看，日志都不能无限的增长。</p>
-<p><code>Pbft</code>采用<code>检查点（checkpoint）</code>机制来压缩日志，其本质和<code>Raft</code>算法采用快照的形式清理日志是一样的，只是实现的方式不同。</p>
-<p>为每一次操作创建一个集群中稳定检查点，代价是非常昂贵的，<code>Pbft</code>为常数个操作创建一次稳定检查点，比如每100个操作创建一次检查点，而这个检查点就是<code>checkpoint</code>，当这个<code>checkpoint</code>得到集群中多数节点认可以后，就变成了稳定检查点<code>stable checkpoint</code>。</p>
-<p>当节点<code>i</code>生成<code>checkpoint</code>后会广播消息<code>&lt;CHECKPOINT, n, d, i&gt;</code>其中<code>n</code>是最后一次执行的消息序号，<code>d</code>是<code>n</code>执行后的状态机状态的摘要。每个节点收到<code>2f+1</code>个相同<code>n</code>和<code>d</code>的<code>checkpoint</code>消息以后，<code>checkpoint</code>就变成了<code>stable checkpoint</code>。同时删除本地序号小于等于<code>n</code>的消息。</p>
-<p>同时<code>checkpoint</code>还有一个提高<code>水线（water mark）</code>的作用，当一个<code>stable checkpoint</code>被创建的时候，水线<code>h</code>被修改为<code>stable checkpoint</code>的<code>n</code>，水线<code>H</code>为<code>h + k</code>而<code>k</code>就是之前用到创建<code>checkpoint</code>的那个常数。</p>
-<h2 id="视图变更流程"><a href="#视图变更流程" class="headerlink" title="视图变更流程"></a>视图变更流程</h2><h3 id="视图变更流程-¶"><a href="#视图变更流程-¶" class="headerlink" title="视图变更流程 ¶"></a>视图变更流程 <a href="#id10" title="永久链接至标题">¶</a></h3><p><img src="https://hyperchain.readthedocs.io/zh_CN/latest/_images/viewchange.png"></p>
-<p>上图中，Primary 1 为拜占庭节点，需要进行 ViewChange。在 RBFT 中的 ViewChange 流程如下：</p>
-<ol>
-<li> 从节点在检测到主节点有异常情况（没有按时收到 nullRequest 消息）或者接收到来自其他 f+1 个节点的 ViewChange 消息之后会向全网广播 ViewChange 消息，自身 view 从 v 更改为 v+1；</li>
-<li> 新视图中主节点收到 N-f 个 ViewChange 消息后，根据收到的 ViewChange 消息计算出新视图中主节点开始执行的 checkpoint 和接下来要处理的交易包，封装进 NewView 消息并广播，发起 VcReset；</li>
-<li> 从节点接收到 NewView 消息之后进行消息的验证和对比，如果通过验证，进行 VcReset，如果不通过，发送 ViewChange 消息，进行又一轮 ViewChange；</li>
-<li> 所有节点完成 VcReset 之后向全网广播 FinishVcReset；</li>
-<li> 每个节点在收到 N-f 个 FinishVcReset 消息之后，开始处理确定的 checkpoint 后的交易，完成整个 ViewChange 流程。</li>
-</ol>
-<p>由于共识模块与执行模块之间是异步通信的，而 ViewChange 之后执行模块可能存在一些无用的 validate 缓存，因此共识模块需要在 ViewChange 完成之前通知执行模块清除无用的缓存，RBFT 通过 VcReset 事件主动通知执行模块清除缓存，并在清理完成之后才能完成 ViewChange。</p>
-<h3 id="视图切换（View-Change）"><a href="#视图切换（View-Change）" class="headerlink" title="视图切换（View-Change）"></a>视图切换（View-Change）</h3><p>在正常流程中，可以看到所有客户端发来的消息<code>m</code>都是由主节点<code>p</code>广播到集群的，但是当主节点突然宕机，又怎么保证集群的可用性呢？</p>
+<p>考虑到节点 ID 很长，在共识消息中包含该字段会耗费部分网络带宽，FISCO BCOS 引入了节点索引，每个共识节点维护一份公共的共识节点列表，节点索引记录了每个共识节点 ID 在这个列表中的位置，发送网络消息包时，只需要带上节点索引，其他节点即可以从公共的共识节点列表中索引出节点的 ID，进而对消息进行验签:</p>
+<blockquote>
+<p><strong>节点索引</strong> : 每个共识节点 ID 在这个公共节点 ID 列表中的位置</p>
+</blockquote>
+<h2 id="视图变更流程-View-Change"><a href="#视图变更流程-View-Change" class="headerlink" title="视图变更流程 View-Change"></a>视图变更流程 View-Change</h2><p>RBFT 视图变更能够解决主节点成为拜占庭节点的问题。在 RBFT 算法中，参与共识的节点可根据角色分为主节点和从节点。主节点最重要的功能是将收到的交易按照一定策略打包成块，为交易定序，并让所有节点按照此顺序执行。然而，如果主节点发生宕机、系统错误或者被攻占（即成为拜占庭节点），从节点需要及时发现主节点异常并选举产生新的主节点。这将是所有 BFT 类算法为满足稳定性必须要解决的问题。</p>
+<p>FISCO BCOS</p>
+<p>当 PBFT 三阶段共识超时或节点收到空块时，PBFTEngine 会试图切换到更高的视图 (将要切换到的视图 toView 加一)，并触发 ViewChange 处理流程；节点收到 ViewChange 包时，也会触发 ViewChange 处理流程：</p>
+<ul>
+<li>  <strong>判断 ViewChange 包是否有效</strong>: 有效的 ViewChange 请求中带有的块高值必须不小于当前节点最高块高，视图必须大于当前节点视图；</li>
+<li>  <strong>缓存有效 ViewChange 包</strong>： 防止相同的 ViewChange 请求被处理多次，也作为判断节点是否可以切换视图的统计依据；</li>
+<li>  <strong>收集 ViewChange 包</strong>：若收到的 ViewChange 包中附带的 view 等于本节点的即将切换到的视图 toView 且本节点收集满<code>2*f+1</code>来自不同节点 view 等于 toView 的 ViewChange 包，则说明超过三分之二的节点要切换到 toView 视图，切换当前视图到 toView。</li>
+<li></li>
+</ul>
+<h3 id="视图切换过程（View-Change）"><a href="#视图切换过程（View-Change）" class="headerlink" title="视图切换过程（View-Change）"></a>视图切换过程（View-Change）</h3><p>在正常流程中，可以看到所有客户端发来的消息<code>m</code>都是由主节点<code>p</code>广播到集群的，但是当主节点突然宕机，又怎么保证集群的可用性呢？</p>
 <p><code>view-change</code>提供了一种当主节点宕机以后依然可以保证集群可用性的机制。<code>view-change</code>通过计时器来进行切换，避免副本长时间的等待请求。</p>
 <p>当副本收到请求时，就启动一个计时器，如果这个时候刚好有定时器在运行就重置（reset）定时器，但是<code>主节点</code>宕机的时候，副本<code>i</code>就会在当前<code>视图</code>v中超时，这个时候副本<code>i</code>就会触发<code>view-change</code>的操作，将视图切换为<code>v+1</code>。</p>
 <ul>
@@ -383,7 +398,32 @@
 <li>如果集合<code>P</code>不为空，广播<code>&lt;PRE-PREPARE, v+1, n,d&gt;</code></li>
 </ul>
 <p>总结一下，在<code>view-change</code>中最为重要的就是<code>C</code>，<code>P</code>，<code>Q</code>三个消息的集合，<code>C</code>确保了视图变更的时候，<code>stable checkpoint</code>之前的状态安全。<code>P</code>确保了视图变更前，已经<code>PREPARE</code>的消息的安全。<code>Q</code>确保了视图变更后<code>P</code>集合中的消息安全。回想一下<code>pre-prepare</code>和<code>prepare</code>阶段最重要的任务是保证，同一个<code>主节点</code>发出的请求在同一个<code>视图（view）</code>中的顺序是一致的，而在视图切换过程中的<code>C</code>，<code>P</code>，<code>Q</code>三个集合就是解决这个问题的。</p>
-<h2 id="主动恢复流程"><a href="#主动恢复流程" class="headerlink" title="主动恢复流程"></a>主动恢复流程</h2><h3 id="自主恢复流程-¶"><a href="#自主恢复流程-¶" class="headerlink" title="自主恢复流程 ¶"></a>自主恢复流程 <a href="#id12" title="永久链接至标题">¶</a></h3><p><img src="https://hyperchain.readthedocs.io/zh_CN/latest/_images/recovery.png"></p>
+<p>当主节点挂了（超时无响应）或者从节点集体认为主节点是问题节点时，就会触发 ViewChange 事件， ViewChange 完成后，视图编号将会加 1 。下图展示 ViewChange 的三个阶段流程：</p>
+<p><img src="https://pic2.zhimg.com/v2-ad76a4d2972a51caa904942ec168c96d_r.jpg"></p>
+<p>如图所示， viewchange 会有三个阶段，分别是 view-change ， view-change-ack 和 new-view 阶段。从节点认为主节点有问题时，会向其它节点发送 view-change 消息，当前存活的节点编号最小的节点将成为新的主节点。当新的主节点收到 2f 个其它节点的 view-change 消息，则证明有足够多人的节点认为主节点有问题，于是就会向其它节点广播 New-view 消息。注意：从节点不会发起 new-view 事件。对于主节点，发送 new-view 消息后会继续执行上个视图未处理完的请求，从 pre-prepare 阶段开始。其它节点验证 new-view 消息通过后，就会处理主节点发来的 pre-prepare 消息，这时执行的过程就是前面描述的 pbft 过程。到这时，正式进入 v+1 （视图编号加 1）的时代了。</p>
+<p>为了更清晰的展现 ViewChange 这个过程和一些细节，下面以流程图来表示这个过程：</p>
+<p><img src="https://pic1.zhimg.com/v2-8a7ae919ae6e347bc8bd7cb46ef811e4_r.jpg"></p>
+<p>上图里红色字体部分的 O 集合会包含哪些 pre-prepare 消息呢？假设 O 集合里消息的编号范围：（min～max），则 Min 为 V 集合最小的 stable checkpoint ， Max 为 V 集合中最大序号的 prepare 消息。最后一步执行 O 集合里的 pre-preapare 消息，每条消息会有两种情况: 如果 max-min&gt;0，则产生消息 &lt;pre-prepare,v+1,n,d&gt; ；如果 max-min=0，则产生消息 &lt;pre-prepare,v+1,n,d(null)&gt;。</p>
+<h3 id="可检测到的拜占庭行为"><a href="#可检测到的拜占庭行为" class="headerlink" title="可检测到的拜占庭行为"></a>可检测到的拜占庭行为</h3><p>目前 RBFT 能够检测到的主节点的拜占庭行为主要有 2 种场景：</p>
+<ol>
+<li> 主节点停止工作，不再发送任何消息；</li>
+<li> 主节点发送错误的消息。</li>
+</ol>
+<p>对于场景一，RBFT 由 nullRequest 机制保证，行为正确的主节点会在没有交易发生时，向所有从节点定时发送 nullRequest 来维持正常连接。如果从节点在规定时间内没有收到 nullRequest，则会触发 ViewChange 流程选举新的主节点。</p>
+<p>对于场景二，从节点会对主节点发出的消息进行验证，如上一节中提到的包含在 PrePrepare 消息中的验证结果，如果从节点验证不通过的话，会直接发起 ViewChange 流程选举新的主节点。</p>
+<p>此外，RBFT 还提供了可配置的 ViewChangePeriod 选项。用户可以根据需要设置此选项，每写入一定数量区块后进行主动的 ViewChange 轮换主节点，一来能够缓解主节点作为打包节点的额外压力，二来也使所有参与共识的节点都能承担一定的打包工作，保证了公平性。</p>
+<p><img src="https://hyperchain.readthedocs.io/zh_CN/latest/_images/viewchange.png"></p>
+<p>上图中，Primary 1 为拜占庭节点，需要进行 ViewChange。在 RBFT 中的 ViewChange 流程如下：</p>
+<ol>
+<li> 从节点在检测到主节点有异常情况（没有按时收到 nullRequest 消息）或者接收到来自其他 f+1 个节点的 ViewChange 消息之后会向全网广播 ViewChange 消息，自身 view 从 v 更改为 v+1；</li>
+<li> 新视图中主节点收到 N-f 个 ViewChange 消息后，根据收到的 ViewChange 消息计算出新视图中主节点开始执行的 checkpoint 和接下来要处理的交易包，封装进 NewView 消息并广播，发起 VcReset；</li>
+<li> 从节点接收到 NewView 消息之后进行消息的验证和对比，如果通过验证，进行 VcReset，如果不通过，发送 ViewChange 消息，进行又一轮 ViewChange；</li>
+<li> 所有节点完成 VcReset 之后向全网广播 FinishVcReset；</li>
+<li> 每个节点在收到 N-f 个 FinishVcReset 消息之后，开始处理确定的 checkpoint 后的交易，完成整个 ViewChange 流程。</li>
+</ol>
+<p>由于共识模块与执行模块之间是异步通信的，而 ViewChange 之后执行模块可能存在一些无用的 validate 缓存，因此共识模块需要在 ViewChange 完成之前通知执行模块清除无用的缓存，RBFT 通过 VcReset 事件主动通知执行模块清除缓存，并在清理完成之后才能完成 ViewChange。</p>
+<h2 id="主动恢复流程"><a href="#主动恢复流程" class="headerlink" title="主动恢复流程"></a>主动恢复流程</h2><p>区块链网络在运行过程中由于网络抖动、突然断电、磁盘故障等原因，可能会导致部分节点的执行速度落后于大多数节点。在这种场景下，节点需要能够做到自动恢复才能继续参与后续的共识流程。为了解决这类数据恢复的问题，RBFT 算法提供了一种动态数据自动恢复的机制 (recovery)，recovery 通过主动索取现有共识网络中所有节点的视图、最新区块等信息来更新自身的存储状态，最终同步至整个系统的最新状态。在节点启动、节点重启或者节点落后的时候，节点将会自动进入 recovery，同步至整个系统的最新状态。</p>
+<h3 id="自主恢复流程"><a href="#自主恢复流程" class="headerlink" title="自主恢复流程"></a>自主恢复流程</h3><p><img src="https://hyperchain.readthedocs.io/zh_CN/latest/_images/recovery.png"></p>
 <p>上图中，Replica 4 为落后节点，需要进行 recovery。此节点在 RBFT 中的自动恢复流程如下：</p>
 <ol>
 <li> Replica 4 首先广播 NegotiateView 消息，获取当前其余节点的视图信息；</li>
@@ -407,7 +447,8 @@
 <li>其余节点收到<code>RevoeryToCheckpoint</code>后将自身最新的检查点信息返回给<code>Replica 4</code>;</li>
 <li><code>Replica 4</code>收到quorum个消息后，更新自己的检查点到最新，更新完成以后向正常节点索要pset、qset和cset的信息（即PBFT算法中pre-prepare阶段、prepare阶段和commit阶段的数据）同步至全网最新状态；</li>
 </ul>
-<h2 id="增删节点流程"><a href="#增删节点流程" class="headerlink" title="增删节点流程"></a>增删节点流程</h2><h3 id="增删节点"><a href="#增删节点" class="headerlink" title="增删节点"></a>增删节点</h3><p><code>Replica 5</code>新节点加入的流程如下图所示；</p>
+<h2 id="增删节点流程"><a href="#增删节点流程" class="headerlink" title="增删节点流程"></a>增删节点流程</h2><p>在联盟链场景下，由于联盟的扩展或者某些成员的退出，需要联盟链支持成员的动态进出服务，而传统的 PBFT 算法不支持节点的动态增删。RBFT 为了能够更加方便地控制联盟成员的准入和准出，添加了保持集群非停机的情况下动态增删节点的功能。</p>
+<h3 id="增删节点"><a href="#增删节点" class="headerlink" title="增删节点"></a>增删节点</h3><p><code>Replica 5</code>新节点加入的流程如下图所示；</p>
 <p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glfdvv2a88j30k006e3zd.jpg" alt="img"></p>
 <ul>
 <li>新节点启动以后，向网络中其他节点建立连接并且发送<code>AddNode</code>消息；</li>
@@ -419,7 +460,7 @@
 </ul>
 <p>删除节点的流程和新增节点的过程类似：</p>
 <p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glfdvujzlij31400hz771.jpg" alt="img"></p>
-<h3 id="新增节点流程-¶"><a href="#新增节点流程-¶" class="headerlink" title="新增节点流程 ¶"></a>新增节点流程 <a href="#id14" title="永久链接至标题">¶</a></h3><p><img src="https://hyperchain.readthedocs.io/zh_CN/latest/_images/node_management.png"></p>
+<h3 id="新增节点流程"><a href="#新增节点流程" class="headerlink" title="新增节点流程"></a>新增节点流程</h3><p><img src="https://hyperchain.readthedocs.io/zh_CN/latest/_images/node_management.png"></p>
 <p>上图中，Replica 5 为待新增的节点。RBFT 节点的动态新增节点流程如下：</p>
 <ol>
 <li> 新增节点 Replica 5 通过读取配置文件信息，主动向现有节点发起连接，确认所有节点连接成功后更新自身的路由表，并发起 recovery；</li>
@@ -452,21 +493,67 @@
 <p><strong>提交阶段</strong></p>
 <p>在提交阶段，每个节点广播 commit 消息告诉其他节点自己已经进入准备状态。如果集齐至少 2f+1 的 commit 消息则说明提案通过。</p>
 <p>在经过了三阶段协议之后，每个副本节点都想客户端发送回复，副本节点会把时间戳比已回复时间戳更小的请求丢弃，以保证请求只会被执行一次。</p>
+<h2 id="附加概念"><a href="#附加概念" class="headerlink" title="附加概念"></a>附加概念</h2><h3 id="交易池"><a href="#交易池" class="headerlink" title="交易池"></a>交易池</h3><p>在区块链系统当中，交易池 (TxPool) 是常见的，对于PBFT算法而言不是必须的，但是为了能够便于下文理解，先在主流程内简单介绍一下。</p>
+<p>交易池用于缓存交易数据，交易池其实扮演了蓄洪的作用，一方面缓冲了外部请求的压力，另一方面，也让交易处理更加稳定，减少了请求毛刺。在区块链节点接收到交易之后，将会把交易缓存到自己的交易池当中，随后向全网广播交易，通过该机制，可以让所有的节点都能够拥有完整的交易列表（如果从节点在验证之前发现缺少了某些交易，也只需要向主节点索取缺少的那些交易而不用索取整个区块里面所有的交易），从而满足PBFT只需要广播交易Hash进行共识的条件，上述方式较传统方式可以减小传输带宽，降低主节点压力，提升共识稳定性。</p>
+<p>尽管下图的以太坊交易池的作用有所不同，但是思想其实是一致的，都是把交易进行一个缓冲，降低共识的压力。</p>
+<img src="PBFT%E7%AE%97%E6%B3%95%E5%85%B3%E9%94%AE%E6%A6%82%E8%A6%81.assets/tx_pool_infographic.png" alt="Image of transaction gas infographic" style="zoom:25%;" />
+
+<div><p style="font-size: 12px; color: #3f3f3f; text-align: center;">以太坊交易池</p></div>
+
+
+
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>PBFT 共识算法在 1999 年的时候由 Castro 和 Liskov 正式提出，它在设计时考虑的共识对象是一些相对不大的消息。为了对消息进行排序，PBFT 设计了水线机制，通过 checkpoint 机制移动水线，用以并发地处理多个消息的投票过程。同时， PBFT 只有当某个节点作恶或掉线才触发视图的切换，主节点的更换。这是因为视图的切换过程也是需要共识的，这一过程非常耗时，因此 PBFT 不能接受频繁的视图变更。再加上为了配合水位机制，视图切换的消息都相对普通消息要大得多。因为以上原因，PBFT 的设计非常复杂，效率不高。</p>
 <p>然而，随着技术的发展，区块链技术的诞生轻松的化解掉了 PBFT 在设计上的一些问题。 在区块链中，每一个消息（区块）前后相继，用于并发处理的水位机制毫无用处，因此水线机制以及为此服务的 checkpoint 机制就没有存在的意义了。没有了水线机制和 checkpoint，阻碍视图切换的就只剩下视图切换的共识过程了，而这一点又被区块链本身作为共识账本的特点给简化掉了。如果节点的切换通过链上的数据来达成共识，那么原本需要经过在线共识的过程又省掉了。</p>
 <p>因此大量的区块链项目都使用了改进的 PBFT 用作共识算法，作为拜占庭容错的代表的 PBFT 也在不断地优化的过程中焕发出了新的生机。</p>
-<blockquote>
-<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/78010422">zhuanlan.zhihu.com</a></p>
-</blockquote>
-<p>博客链接，排版比知乎好一点 ~ <a href="https://link.zhihu.com/?target=http://qyuan.top/2019/08/13/pbft-1/">详解实用拜占庭协议 Pbf</a>t（一）</p>
-<p><code>PBFT</code>算法和<code>Raft</code>算法解决的核心问题都是在分布式环境下如何保持集群状态的一致性，简而言之就是一组服务，给定一组操作，最后得到一致的结果。</p>
-<p><code>PBFT</code>算法假设的环境又比<code>Raft</code>算法更加的’恶劣‘，<code>Raft</code>算法只支持容错故障节点，而<code>PBFT</code>算法除了需要支持容错故障节点之外，还需要容忍作恶节点。</p>
-<blockquote>
-<p>作恶节点节点是指可能对接收到的消息作出截然相反的回复，甚至伪造消息。  </p>
-</blockquote>
-<p><code>PBFT</code>算法中节点只有两种角色，<code>主节点（primary）</code>和<code>副本（replica）</code>，两种角色之间可以相互转换。两者之间的转换又引入了<code>视图（view）</code>的概念，<code>视图</code>在<code>PBFT</code>算法中起到逻辑时钟的作用。</p>
-<p>为了更多的容错性，<code>PBFT</code>算法最大的容错节点数量<code>( n - 1 ) / 3</code>，也就是是说 4 个节点的集群最多只能容忍一个节点作恶或者故障。而<code>Raft</code>算法的最大容错节点是<code>( n - 1) / 2</code>，5 个节点的集群可以容忍 2 个节点故障。</p>
-<h3 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h3><p>Q：为什么<code>PBFT</code>算法需要三个阶段？</p>
+<h1 id="PBFT-状态机"><a href="#PBFT-状态机" class="headerlink" title="PBFT 状态机"></a>PBFT 状态机</h1><p>这个原文是没有图的，只能根据文字描述自行理解，还是挺复杂的：</p>
+<p><img src="https://img-blog.csdn.net/20180814171405725?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1R1cmtleUNvY2s=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
+<p>图中的圆角矩形表示状态，六边形表示等待阶段，绿线代表正常流程，红线代表异常流程。下面一个一个的来介绍：</p>
+<ul>
+<li>wait request<ul>
+<li>  即等待请求状态，所有节点初始均处于该状态</li>
+<li>  primary 收到 REQUEST 消息后，会转换到 pre-prepare 状态</li>
+<li>  backup 收到区块后，会转换到 prepare 状态</li>
+</ul>
+</li>
+<li>pre-prepare<ul>
+<li>  这个状态是 primary 专属的，primary 生成区块并广播 PRE-PREPARE 消息后，转换到 prepare 状态</li>
+</ul>
+</li>
+<li>prepare<ul>
+<li>  进入该状态后，广播 PREPARE 消息，并等待 2f+1 个节点确认</li>
+</ul>
+</li>
+<li>wait for 2f+1 prepare<ul>
+<li>  如果等到了 2f+1 个节点确认（accept 或 reject），转换到 commit 状态</li>
+<li>  如果超时，转换到 view change 状态</li>
+</ul>
+</li>
+<li>commit<ul>
+<li>  进入该状态后，广播 COMMIT 消息，并等待 2f+1 个节点确认</li>
+</ul>
+</li>
+<li>wait for 2f+1 commit<ul>
+<li>  如果等到了 2f+1 个节点确认（accept 或 reject），发送 REPLY 消息，转换回 wait request 状态</li>
+<li>  如果超时，转换到 view change 状态</li>
+</ul>
+</li>
+<li>view change<ul>
+<li>  进入该状态后，广播 v+1 的 VIEW-CHNAGE 消息，等待接收 2f 个节点的 VIEW-CHANGE 消息</li>
+</ul>
+</li>
+<li>wait for 2f view change<ul>
+<li>这个状态比较复杂，可以分为以下 4 种情形：<ul>
+<li>  收到了 2f 个节点的 VIEW-CHANGE 消息，并且是新的 primary，广播 NEW-VIEW 消息，并转换到 pre-prepare 状态</li>
+<li>  收到了 2f 个节点的 VIEW-CHANGE 消息，并且是 backup，转换到 wait request 状态</li>
+<li>  接收超时，重新回到 view change 状态，广播 v+2 的 VIEW-CHANGE 消息</li>
+<li>  在收到 2f 个节点的 VIEW-CHANGE 消息之前，收到了 NEW-VIEW 消息，则转换到 prepare 状态</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>需要注意的是，如果接收到了 NEW-VIEW 消息，则表示当前 view 未达成共识，需要在更高层的 view 上完成共识。因此，不管当前处于哪个阶段，都需要重新回到 prepare 状态。</p>
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><p>Q：为什么<code>PBFT</code>算法需要三个阶段？</p>
 <p>A：假如简化为两个阶段<code>pre-prepare</code>和<code>prepare</code>，当一个节点A收到<code>2f+1</code>个相同的<code>prepare</code>后执行请求，一部分节点B发生<code>view-change</code>，在<code>view-change</code>的过程中是拒收<code>prepare</code>消息的，所以这一部分节点的状态机会少执行一个请求，当<code>view-change</code>切换成功后重放<code>prepare</code>消息，在重放的过程中，节点A也完成了<code>view-change</code>，这个时候A就会面临重放的<code>prepare</code>已经执行过了，是否需要再次执行？会导致状态机出现二义性。</p>
 <hr>
 <p>Q：view-change阶段集群会不可用么？</p>
@@ -474,92 +561,28 @@
 <hr>
 <p>Q：Pbft算法的时间复杂度？</p>
 <p>A：Pbft算法的时间复杂度O(n^2)，在<code>prepare</code>和<code>commit</code>阶段会将消息广播两次，一般而言，Pbft集群中的节点都不会超过100。</p>
-<p>作者简介：梁敏鸿，美图区块链架构师，专注于区块链技术研究与产品应用落地。</p>
-<blockquote>
-<p>导语：区块链技术中，共识算法是其中核心的一个组成部分，本文将详细阐述私链的 raft 算法和联盟链的 pbft 算法，从算法的基本流程切入，分析两者的区别。</p>
-</blockquote>
-<p>区块链技术中，共识算法是其中核心的一个组成部分。首先我们来思考一个问题：什么是共识？对于现实世界，共识就是一群人对一件或者多件事情达成一致的看法或者协议。那么在计算机世界当中，共识是什么呢？</p>
-<p>我的理解包含两个层面，第一个层面是点的层面，即多个节点对某个数据达成一致共识。第二个层面是线的层面，即多个节点对多个数据的顺序达成一致共识。这里的节点可以是任意的计算机设备，比如 pc 电脑，笔记本，手机，路由器等，这里的数据可以是交易数据，状态数据等。<strong>其中对数据顺序达成一致共识是很多共识算法要解决的本质问题。</strong></p>
-<p>常见的共识算法都有哪些呢？现阶段的共识算法主要可以分成三大类：公链，联盟链和私链。下面描述这三种类别的特征：</p>
+<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><p>接下来就是介绍一下相关的数据结构了，主要是状态和消息。</p>
+<h2 id="State"><a href="#State" class="headerlink" title="State"></a>State</h2><p><img src="https://img-blog.csdn.net/20180814171626304?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1R1cmtleUNvY2s=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
+<p>节点的状态主要包含三部分：</p>
 <ul>
-<li>  私链：私链的共识算法即区块链这个概念还没普及时的传统分布式系统里的共识算法，比如 zookeeper 的 zab 协议，就是类 paxos 算法的一种。私链的适用环境一般是不考虑集群中存在作恶节点，只考虑因为系统或者网络原因导致的故障节点。</li>
-<li>  联盟链：联盟链中，经典的代表项目是 Hyperledger 组织下的 Fabric 项目， Fabric0.6 版本使用的就是 pbft 算法。联盟链的适用环境除了需要考虑集群中存在故障节点，还需要考虑集群中存在作恶节点。对于联盟链，每个新加入的节点都是需要验证和审核的。</li>
-<li>  公链：公链不断需要考虑网络中存在故障节点，还需要考虑作恶节点，这一点和联盟链是类似的。和联盟链最大的区别就是，公链中的节点可以很自由的加入或者退出，不需要严格的验证和审核。</li>
+<li>  世界状态（即最新区块信息）</li>
+<li>  消息日志</li>
+<li>  当前 view</li>
 </ul>
-<p>本文接下来将会主要阐述私链的 raft 算法和联盟链的 pbft 算法，以及它们的区别和对比。</p>
-<p><img src="https://pic1.zhimg.com/v2-1b29af254f0cc338876f232e32415878_r.jpg"></p>
-<h1 id="三、raft-和-pbft-的对比"><a href="#三、raft-和-pbft-的对比" class="headerlink" title="三、raft 和 pbft 的对比"></a>三、raft 和 pbft 的对比</h1><hr>
+<h2 id="Three-Phase-Protocol"><a href="#Three-Phase-Protocol" class="headerlink" title="Three Phase Protocol"></a>Three Phase Protocol</h2><p><img src="https://img-blog.csdn.net/20180814171638282?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1R1cmtleUNvY2s=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
+<p>这里列出了三阶段协议相关的消息结构，其中 PRE-PREPARE 消息包含新生成的区块，其他消息则主要包含一些 id、sequence number、区块内容摘要和签名等信息。</p>
+<h2 id="VIEW-CHANGE"><a href="#VIEW-CHANGE" class="headerlink" title="VIEW-CHANGE"></a>VIEW-CHANGE</h2><p><img src="https://img-blog.csdn.net/20180814171712980?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1R1cmtleUNvY2s=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
+<p>VIEW-CHANGE 消息包含的内容比较多：<br>首先需要基于一个稳定的 checkpoint，因此需要包含 2f+1 个 CHECKPOINT 消息以证明该 checkpoint 是有效的。<br>然后，在该 checkpoint 之上的所有 sequence number，都需要打包对应的 PRE-PREPARE 消息以及 2f 个 PREPARE 消息。</p>
+<h2 id="NEW-VIEW"><a href="#NEW-VIEW" class="headerlink" title="NEW-VIEW"></a>NEW-VIEW</h2><p><img src="https://img-blog.csdn.net/20180814171729918?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1R1cmtleUNvY2s=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
+<p>NEW-VIEW 消息首先需要包含 2f+1 个 VIEW-CHANGE 消息，以证明确实有超过 2/3 的节点同意在更高的 view 上进行新一轮共识。<br>然后，根据收到的所有 VIEW-CHANGE 消息中的 checkpoint 信息，找出最小值 min_s 和最大值 max_s，打包该区间内的每一个 sequence number 对应的 PRE-PREPARE 消息。<br>特别的，为了减少重复验证，如果在某个 sequence number 上从未进行过 view change（即第一轮就达成了共识），则 PRE-PREPARE 中包含一个特殊的 null 请求的摘要信息。</p>
+<p>具体逻辑参见下图：<br><img src="https://img-blog.csdn.net/20180814171838867?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1R1cmtleUNvY2s=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
+<h1 id="raft-和-pbft-的对比"><a href="#raft-和-pbft-的对比" class="headerlink" title="raft 和 pbft 的对比"></a>raft 和 pbft 的对比</h1><hr>
 <p>下图列出了 raft 算法和 pbft 算法在适用环境，通信复杂度，最大容错节点数和流程上的对比。</p>
 <p><img src="https://pic1.zhimg.com/v2-d1611f0fb63392a94c751d26ce66a660_r.jpg"></p>
 <p>关于两个算法的适用环境和最大容错节点数，前文已经做过阐述，这里不再细说。而对于算法通信复杂度，为什么 raft 是 o（n），而 pbft 是 o（n^2）呢？这里主要考虑算法的共识过程。</p>
 <p>对于 raft 算法，核心共识过程是日志复制这个过程，这个过程分两个阶段，一个是日志记录，一个是提交数据。两个过程都只需要领导者发送消息给跟随者节点，跟随者节点返回消息给领导者节点即可完成，跟随者节点之间是无需沟通的。所以如果集群总节点数为 n，对于日志记录阶段，通信次数为 n-1，对于提交数据阶段，通信次数也为 n-1，总通信次数为 2n-2，因此 raft 算法复杂度为 O（n）。</p>
 <p>对于 pbft 算法，核心过程有三个阶段，分别是 pre-prepare （预准备）阶段，prepare （准备）阶段和 commit （提交）阶段。对于 pre-prepare 阶段，主节点广播 pre-prepare 消息给其它节点即可，因此通信次数为 n-1 ；对于 prepare 阶段，每个节点如果同意请求后，都需要向其它节点再 广播 parepare 消息，所以总的通信次数为 n<em>（n-1），即 n^2-n ；对于 commit 阶段，每个节点如果达到 prepared 状态后，都需要向其它节点广播 commit 消息，所以总的通信次数也为 n</em>（n-1） ，即 n^2-n 。所以总通信次数为 （n-1）+（n^2-n）+（n^2-n） ，即 2n^2-n-1 ，因此 pbft 算法复杂度为 O（n^2） 。</p>
 <p>流程的对比上，对于 leader 选举这块， raft 算法本质是谁快谁当选，而 pbft 算法是按编号依次轮流做主节点。对于共识过程和重选 leader 机制这块，为了更形象的描述这两个算法，接下来会把 raft 和 pbft 的共识过程比喻成一个团队是如何执行命令的过程，从这个角度去理解 raft 算法和 pbft 的区别。</p>
-<p>一个团队一定会有一个老大和普通成员。对于 raft 算法，共识过程就是：只要老大还没挂，老大说什么，我们（团队普通成员）就做什么，坚决执行。那什么时候重新老大呢？只有当老大挂了才重选老大，不然生是老大的人，死是老大的鬼。</p>
-<p>对于 pbft 算法，共识过程就是：老大向我发送命令时，当我认为老大的命令是有问题时，我会拒绝执行。就算我认为老大的命令是对的，我还会问下团队的其它成员老大的命令是否是对的，只有大多数人 （2f+1） 都认为老大的命令是对的时候，我才会去执行命令。那什么时候重选老大呢？老大挂了当然要重选，如果大多数人都认为老大不称职或者有问题时，我们也会重新选择老大。</p>
-<ol start="5">
-<li>RBFT 自主恢复 <a href="#id11" title="永久链接至标题">¶</a></li>
-</ol>
-<hr>
-<p>区块链网络在运行过程中由于网络抖动、突然断电、磁盘故障等原因，可能会导致部分节点的执行速度落后于大多数节点。在这种场景下，节点需要能够做到自动恢复才能继续参与后续的共识流程。为了解决这类数据恢复的问题，RBFT 算法提供了一种动态数据自动恢复的机制 (recovery)，recovery 通过主动索取现有共识网络中所有节点的视图、最新区块等信息来更新自身的存储状态，最终同步至整个系统的最新状态。在节点启动、节点重启或者节点落后的时候，节点将会自动进入 recovery，同步至整个系统的最新状态。</p>
-<ol start="7">
-<li></li>
-<li><p> RBFT 节点增删 <a href="#id13" title="永久链接至标题">¶</a></p>
-</li>
-</ol>
-<hr>
-<p>在联盟链场景下，由于联盟的扩展或者某些成员的退出，需要联盟链支持成员的动态进出服务，而传统的 PBFT 算法不支持节点的动态增删。RBFT 为了能够更加方便地控制联盟成员的准入和准出，添加了保持集群非停机的情况下动态增删节点的功能。</p>
-<blockquote>
-<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/design/consensus/pbft.html">fisco-bcos-documentation.readthedocs.io</a></p>
-</blockquote>
-<p><strong>PBFT</strong>(Practical Byzantine Fault Tolerance)共识算法可以在少数节点作恶 (如伪造消息) 场景中达成共识，它采用签名、签名验证、哈希等密码学算法确保消息传递过程中的防篡改性、防伪造性、不可抵赖性，并优化了前人工作，将拜占庭容错算法复杂度从指数级降低到多项式级别，在一个由 (3<em>f+1) 个节点构成的系统中，只要有不少于 (2</em>f+1) 个非恶意节点正常工作，该系统就能达成一致性，如：7 个节点的系统中允许 2 个节点出现拜占庭错误。</p>
-<ol>
-<li>重要概念 <a href="#id1" title="永久链接至标题">¶</a></li>
-</ol>
-<hr>
-<p>节点类型、节点 ID、节点索引和视图是 PBFT 共识算法的关键概念。区块链系统基本概念请参考<a target="_blank" rel="noopener" href="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/tutorial/key_concepts.html">关键概念</a>。</p>
-<h3 id="1-1-节点类型-¶"><a href="#1-1-节点类型-¶" class="headerlink" title="1.1 节点类型 ¶"></a>1.1 节点类型 <a href="#id2" title="永久链接至标题">¶</a></h3><ul>
-<li>  <strong>Leader/Primary</strong>: 共识节点，负责将交易打包成区块和区块共识，每轮共识过程中有且仅有一个 leader，为了防止 leader 伪造区块，每轮 PBFT 共识后，均会切换 leader；</li>
-<li>  <strong>Replica</strong>: 副本节点，负责区块共识，每轮共识过程中有多个 Replica 节点，每个 Replica 节点的处理过程类似；</li>
-<li>  <strong>Observer</strong>: 观察者节点，负责从共识节点或副本节点获取最新区块，执行并验证区块执行结果后，将产生的区块上链。</li>
-</ul>
-<p>其中 Leader 和 Replica 统称为共识节点。</p>
-<h3 id="1-2-节点-ID-amp-amp-节点索引-¶"><a href="#1-2-节点-ID-amp-amp-节点索引-¶" class="headerlink" title="1.2 节点 ID &amp;&amp; 节点索引 ¶"></a>1.2 节点 ID &amp;&amp; 节点索引 <a href="#id" title="永久链接至标题">¶</a></h3><p>为了防止节点作恶，PBFT 共识过程中每个共识节点均对其发送的消息进行签名，对收到的消息包进行验签名，因此每个节点均维护一份公私钥对，私钥用于对发送的消息进行签名，公钥作为节点 ID，用于标识和验签。</p>
-<blockquote>
-<p><strong>节点 ID</strong> : 共识节点签名公钥和共识节点唯一标识, 一般是 64 字节二进制串，其他节点使用消息包发送者的节点 ID 对消息包进行验签</p>
-</blockquote>
-<p>考虑到节点 ID 很长，在共识消息中包含该字段会耗费部分网络带宽，FISCO BCOS 引入了节点索引，每个共识节点维护一份公共的共识节点列表，节点索引记录了每个共识节点 ID 在这个列表中的位置，发送网络消息包时，只需要带上节点索引，其他节点即可以从公共的共识节点列表中索引出节点的 ID，进而对消息进行验签:</p>
-<blockquote>
-<p><strong>节点索引</strong> : 每个共识节点 ID 在这个公共节点 ID 列表中的位置</p>
-</blockquote>
-<h3 id="1-3-视图-view-¶"><a href="#1-3-视图-view-¶" class="headerlink" title="1.3 视图 (view)¶"></a>1.3 视图 (view)<a href="#view" title="永久链接至标题">¶</a></h3><p>PBFT 共识算法使用视图 view 记录每个节点的共识状态，相同视图节点维护相同的 Leader 和 Replicas 节点列表。当 Leader 出现故障，会发生视图切换，若视图切换成功 (至少 2<em>f+1 个节点达到相同视图)，则根据新的视图选出新 leader，新 leader 开始出块，否则继续进行视图切换，直至全网大部分节点(大于等于 2</em>f+1) 达到一致视图。</p>
-<p>FISCO BCOS 系统中，leader 索引的计算公式如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">leader_idx &#x3D; (view + block_number) % node_num</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://gitcdn.xyz/repo/choldgraf/sphinx-copybutton/master/sphinx_copybutton/_static/copy-button.svg"></p>
-<p>下图简单展示了<code>4(3*f+1, f=1)</code>节点 FISCO BCOS 系统中，第三个节点 (node3) 为拜占庭节点情况下，视图切换过程：</p>
-<p><img src="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/_images/pbft_view.png"></p>
-<ul>
-<li>  前三轮共识： node0、node1、node2 为 leader，且非恶意节点数目等于<code>2*f+1</code>，节点正常出块共识；</li>
-<li>  第四轮共识：node3 为 leader，但 node3 为拜占庭节点，node0-node2 在给定时间内未收到 node3 打包的区块，触发视图切换，试图切换到<code>view_new=view+1</code>的新视图，并相互间广播 viewchange 包，节点收集满在视图<code>view_new</code>上的<code>(2*f+1)</code>个 viewchange 包后，将自己的 view 切换为<code>view_new</code>，并计算出新 leader；</li>
-<li>  为第五轮共识：node0 为 leader，继续打包出块。</li>
-</ul>
-<h3 id="1-4-共识消息-¶"><a href="#1-4-共识消息-¶" class="headerlink" title="1.4 共识消息 ¶"></a>1.4 共识消息 <a href="#id3" title="永久链接至标题">¶</a></h3><p>PBFT 模块主要包括 <strong>PrepareReq、SignReq、CommitReq 和 ViewChangeReq</strong> 四种共识消息：</p>
-<ul>
-<li>  <strong>PrepareReqPacket</strong>: 包含区块的请求包，由 leader 产生并向所有 Replica 节点广播，Replica 节点收到 Prepare 包后，验证 PrepareReq 签名、执行区块并缓存区块执行结果，达到防止拜占庭节点作恶、保证区块执行结果的最终确定性的目的；</li>
-<li>  <strong>SignReqPacket</strong>: 带有区块执行结果的签名请求，由收到 Prepare 包并执行完区块的共识节点产生，SignReq 请求带有执行后区块的 hash 以及该 hash 的签名，分别记为 SignReq.block_hash 和 SignReq.sig，节点将 SignReq 广播到所有其他共识节点后，其他节点对 SignReq(即区块执行结果) 进行共识；</li>
-<li>  <strong>CommitReqPacket</strong>: 用于确认区块执行结果的提交请求，由收集满<code>(2*f+1)</code>个 block_hash 相同且来自不同节点 SignReq 请求的节点产生，CommitReq 被广播给所有其他共识节点，其他节点收集满<code>(2*f+1)</code>个 block_hash 相同、来自不同节点的 CommitReq 后，将本地节点缓存的最新区块上链；</li>
-<li>  <strong>ViewChangeReqPacket</strong>: 视图切换请求，当 leader 无法提供正常服务 (如网络连接不正常、服务器宕机等) 时, 其他共识节点会主动触发视图切换，ViewChangeReq 中带有该节点即将切换到的视图(记为 toView，为当前视图加一)，某节点收集满<code>(2*f+1)</code>个视图等于 toView、来自不同节点的 ViewChangeReq 后，会将当前视图切换为 toView。</li>
-</ul>
-<p>这四类消息包包含的字段大致相同，所有消息包共有的字段如下：</p>
-<table><thead><tr><th>字段名</th><th>字段含义</th></tr></thead><tbody><tr><td>字段名</td><td>字段含义</td></tr><tr><td>idx</td><td>当前节点索引</td></tr><tr><td>packetType</td><td>请求包类型 (包括 PrepareReqPacket/SignReqPacket/CommitReqPacket/ViewChangeReqPacket)</td></tr><tr><td>height</td><td>当前正在处理的区块高度 (一般是本地区块高度加一)</td></tr><tr><td>blockHash</td><td>当前正在处理的区块哈希</td></tr><tr><td>view</td><td>当前节点所处的视图</td></tr><tr><td>sig</td><td>当前节点对 blockHash 的签名</td></tr></tbody></table>
-
-<p>PrepareReqPacket 类型消息包包含了正在处理的区块信息:</p>
-<table><thead><tr><th>消息包类型</th><th>字段名</th><th>字段含义</th></tr></thead><tbody><tr><td>PrepareReqPacket</td><td>block</td><td>所有共识节点正在共识的区块数据</td></tr></tbody></table>
-
-<ol start="3">
-<li>核心流程 <a href="#id5" title="永久链接至标题">¶</a></li>
-</ol>
 <hr>
 <p>PBFT 共识主要包括 Pre-prepare、Prepare 和 Commit 三个阶段：</p>
 <ul>
@@ -569,48 +592,16 @@
 </ul>
 <p><img src="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/_images/pbft_process.png"></p>
 <p>下图详细介绍了 PBFT 各个阶段的具体流程：</p>
-<p>graph TB classDef blue fill:#4C84FF,stroke:#4C84FF,stroke-width:4px, font:#1D263F, text-align:center; classDef yellow fill:#FFEEB8,stroke:#FFEEB8,stroke-width:4px, font:#1D263F, text-align:center; classDef light fill:#EBF5FF,stroke:#1D263F,stroke-width:2px, font:#1D263F, text-align:center; subgraph 共识处理流程 A((开始))–&gt;B B(获取 PBFT 请求类型)–&gt;|Prepare 请求 | C B–&gt;|Sign 请求 | D B–&gt;|Commit 请求 | F C(Prepare 是否有效?)–&gt;| 是 | G C–&gt;| 否 | B G(addRawPrepare<br/> 缓存 Prepare 请求)–&gt;H H(Prepare 内区块是空块?)–&gt;| 否 | I H–&gt;| 是 | T T(视图切换) I(execBlock<br/> 执行 Prepare 内区块)–&gt;J J(generateSignPacket<br/> 产生签名请求)–&gt;K K(addPrepareCache<br/> 缓存执行后区块)–&gt;L L(broadcacstSignReq<br/> 广播签名请求) D(isSignReqValid<br/> 签名请求是否有效?)–&gt;| 是 | M D–&gt;| 否 | B M(addSignReq<br/> 缓存收到的签名请求)–&gt;N N(checkSignEnough<br/> 签名请求是否达到 2<em>f+1?)–&gt;| 是 | O N–&gt;| 否 | B O(updateLocalPrepare<br/> 备份 Prepare 请求)–&gt;P P(broadcastCommitReq<br/> 广播 Commit 请求, 表明节点已达到可提交区块状态) F(isCommitReqValid <br/> Commit 请求是否有效?)–&gt;| 是 | Q Q(addCommitReq <br/> 缓存 Commit 请求)–&gt;R R(checkCommitEnough <br/> Commit 请求是否达到 2</em>f+1?)–&gt;| 是 | S R–&gt;| 否 | B S(CommitBlock<br> 将缓存的执行后区块提交到 DB) class A,B light class C,G,H,I,J,K,L,T light class D,M,N,O,P light class Q,F,R,S light end</p>
-<h3 id="3-1-leader-打包区块-¶"><a href="#3-1-leader-打包区块-¶" class="headerlink" title="3.1 leader 打包区块 ¶"></a>3.1 leader 打包区块 <a href="#leader" title="永久链接至标题">¶</a></h3><p>PBFT 共识算法中，共识节点轮流出块，每一轮共识仅有一个 leader 打包区块，leader 索引通过公式<code>(block_number + current_view) % consensus_node_num</code>计算得出。</p>
-<p>节点计算当前 leader 索引与自己索引相同后，就开始打包区块。区块打包主要由 PBFTSealer 线程完成，Sealer 线程的主要工作如下图所示：</p>
-<p><img src="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/_images/sealer.png"></p>
-<ul>
-<li>  <strong>产生新的空块</strong>: 通过区块链 (BlockChain) 获取当前最高块，并基于最高块产生新空块(将新区块父哈希置为最高块哈希，时间戳置为当前时间，交易清空)；</li>
-<li>  <strong>从交易池打包交易</strong>: 产生新空块后，从交易池中获取交易，并将获取的交易插入到产生的新区块中；</li>
-<li>  <strong>组装新区块</strong>: Sealer 线程打包到交易后，将新区块的打包者 (Sealer 字段) 置为自己索引，并根据打包的交易计算出所有交易的 transactionRoot；</li>
-<li>  <strong>产生 Prepare 包</strong>: 将组装的新区块编码到 Prepare 包内，通过 PBFTEngine 线程广播给组内所有共识节点，其他共识节点收到 Prepare 包后，开始进行三阶段共识。</li>
-</ul>
-<h3 id="3-2-pre-prepare-阶段-¶"><a href="#3-2-pre-prepare-阶段-¶" class="headerlink" title="3.2 pre-prepare 阶段 ¶"></a>3.2 pre-prepare 阶段 <a href="#pre-prepare" title="永久链接至标题">¶</a></h3><p>共识节点收到 Prepare 包后，进入 pre-prepare 阶段，此阶段的主要工作流程包括：</p>
-<ul>
-<li>  <strong>Prepare 包合法性判断</strong>：主要判断是否是重复的 Prepare 包、Prepare 请求中包含的区块父哈希是否是当前节点最高块哈希 (防止分叉)、Prepare 请求中包含区块的块高是否等于最高块高加一；</li>
-<li>  <strong>缓存合法的 Prepare 包</strong>: 若 Prepare 请求合法，则将其缓存到本地，用于过滤重复的 Prepare 请求；</li>
-<li>  <strong>空块判断</strong>：若 Prepare 请求包含的区块中交易数目是 0，则触发空块视图切换，将当前视图加一，并向所有其他节点广播视图切换请求；</li>
-<li>  <strong>执行区块并缓存区块执行结果</strong>: 若 Prepare 请求包含的区块中交易数目大于 0，则调用 BlockVerifier 区块执行器执行区块，并缓存执行后的区块；</li>
-<li>  <strong>产生并广播签名包</strong>：基于执行后的区块哈希，产生并广播签名包，表明本节点已经完成区块执行和验证。</li>
-</ul>
-<h3 id="3-3-Prepare-阶段-¶"><a href="#3-3-Prepare-阶段-¶" class="headerlink" title="3.3 Prepare 阶段 ¶"></a>3.3 Prepare 阶段 <a href="#prepare" title="永久链接至标题">¶</a></h3><p>共识节点收到签名包后，进入 Prepare 阶段，此阶段的主要工作流程包括：</p>
-<ul>
-<li>  <strong>签名包合法性判断</strong>：主要判断签名包的哈希与 pre-prepare 阶段缓存的执行后的区块哈希相同，若不相同，则继续判断该请求是否属于未来块签名请求 (产生未来块的原因是本节点处理性能低于其他节点，还在进行上一轮共识，判断未来块的条件是：签名包的 height 字段大于本地最高块高加一)，若请求也非未来块，则是非法的签名请求，节点直接拒绝该签名请求；</li>
-<li>  <strong>缓存合法的签名包</strong>：节点会缓存合法的签名包；</li>
-<li>  <strong>判断 pre-prepare 阶段缓存的区块对应的签名包缓存是否达到<code>2*f+1</code>，若收集满签名包，广播 Commit 包</strong>：若 pre-prepare 阶段缓存的区块哈希对应的签名包数目超过<code>2*f+1</code>，则说明大多数节点均执行了该区块，并且执行结果一致，说明本节点已经达到可以提交区块的状态，开始广播 Commit 包；</li>
-<li>  <strong>若收集满签名包，备份 pre-prepare 阶段缓存的 Prepare 包落盘</strong>：为了防止 Commit 阶段区块未提交到数据库之前超过<code>2*f+1</code>个节点宕机，这些节点启动后重新出块，导致区块链分叉 (剩余的节点最新区块与这些节点最高区块不同)，还需要备份 pre-prepare 阶段缓存的 Prepare 包到数据库，节点重启后，优先处理备份的 Prepare 包。</li>
-</ul>
-<h3 id="3-4-Commit-阶段-¶"><a href="#3-4-Commit-阶段-¶" class="headerlink" title="3.4 Commit 阶段 ¶"></a>3.4 Commit 阶段 <a href="#commit" title="永久链接至标题">¶</a></h3><p>共识节点收到 Commit 包后，进入 Commit 阶段，此阶段工作流程包括：</p>
-<ul>
-<li>  <strong>Commit 包合法性判断</strong>：主要判断 Commit 包的哈希与 pre-prepare 阶段缓存的执行后的区块哈希相同，若不相同，则继续判断该请求是否属于未来块 Commit 请求 (产生未来块的原因是本节点处理性能低于其他节点，还在进行上一轮共识，判断未来块的条件是：Commit 的 height 字段大于本地最高块高加一)，若请求也非未来块，则是非法的 Commit 请求，节点直接拒绝该请求；</li>
-<li>  <strong>缓存合法的 Commit 包</strong>：节点缓存合法的 Commit 包；</li>
-<li>  <strong>判断 pre-prepare 阶段缓存的区块对应的 Commit 包缓存是否达到<code>2*f+1</code>，若收集满 Commit 包，则将新区块落盘</strong>：若 pre-prepare 阶段缓存的区块哈希对应的 Commit 请求数目超过<code>2*f+1</code>，则说明大多数节点达到了可提交该区块状态，且执行结果一致，则调用 BlockChain 模块将 pre-prepare 阶段缓存的区块写入数据库；</li>
-</ul>
-<h3 id="3-5-视图切换处理流程-¶"><a href="#3-5-视图切换处理流程-¶" class="headerlink" title="3.5 视图切换处理流程 ¶"></a>3.5 视图切换处理流程 <a href="#id6" title="永久链接至标题">¶</a></h3><p>当 PBFT 三阶段共识超时或节点收到空块时，PBFTEngine 会试图切换到更高的视图 (将要切换到的视图 toView 加一)，并触发 ViewChange 处理流程；节点收到 ViewChange 包时，也会触发 ViewChange 处理流程：</p>
-<ul>
-<li>  <strong>判断 ViewChange 包是否有效</strong>: 有效的 ViewChange 请求中带有的块高值必须不小于当前节点最高块高，视图必须大于当前节点视图；</li>
-<li>  <strong>缓存有效 ViewChange 包</strong>： 防止相同的 ViewChange 请求被处理多次，也作为判断节点是否可以切换视图的统计依据；</li>
-<li>  <strong>收集 ViewChange 包</strong>：若收到的 ViewChange 包中附带的 view 等于本节点的即将切换到的视图 toView 且本节点收集满<code>2*f+1</code>来自不同节点 view 等于 toView 的 ViewChange 包，则说明超过三分之二的节点要切换到 toView 视图，切换当前视图到 toView。</li>
-</ul>
-<h1 id="五、参考文献"><a href="#五、参考文献" class="headerlink" title="五、参考文献"></a>五、参考文献</h1><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Quorum_(%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F)">https://zh.wikipedia.org/wiki/Quorum_(%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F)</a></p>
-<p>[1].<br>[2]. <a target="_blank" rel="noopener" href="https://www.usenix.org/legacy/event/nsdi09/tech/full_papers/clement/clement.pdf">Making Byzantine Fault Tolerant SystemsTolerate Byzantine Faults (Aardvark)</a><br>[3]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/35847127">共识算法系列之一：raft和pbft算法</a><br>[4]. <a target="_blank" rel="noopener" href="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/design/consensus/pbft.html">PBFT基础流程</a><br>[5]. <a target="_blank" rel="noopener" href="https://hyperchain.readthedocs.io/zh_CN/latest/consensus.html">hyperchain RBFT说明文档</a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/TurkeyCock/article/details/81672759">https://blog.csdn.net/TurkeyCock/article/details/81672759</a></p>
-<p>[7]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/56780298">共识 | 拜占庭容错的代表 PBFT</a></p>
-<p>[8]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/78010422">详解实用拜占庭容错协议</a></p>
+<p><img src="PBFT%E7%AE%97%E6%B3%95%E5%85%B3%E9%94%AE%E6%A6%82%E8%A6%81.assets/image-20201207193518195.png" alt="image-20201207193518195"></p>
+<h1 id="五、参考文献"><a href="#五、参考文献" class="headerlink" title="五、参考文献"></a>五、参考文献</h1><p>[1]. <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/Quorum_(%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F)">Quorum (分布式系统)</a></p>
+<p>[2].<a href="%5Bhttp://pmg.csail.mit.edu/papers/osdi99.pdf%5D(http://pmg.csail.mit.edu/papers/osdi99.pdf)">osdi99</a></p>
+<p>[3]. <a target="_blank" rel="noopener" href="https://www.usenix.org/legacy/event/nsdi09/tech/full_papers/clement/clement.pdf">Making Byzantine Fault Tolerant SystemsTolerate Byzantine Faults (Aardvark)</a></p>
+<p>[4]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/35847127">共识算法系列之一：raft和pbft算法</a></p>
+<p>[5]. <a target="_blank" rel="noopener" href="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/design/consensus/pbft.html">PBFT基础流程</a></p>
+<p>[6]. <a target="_blank" rel="noopener" href="https://hyperchain.readthedocs.io/zh_CN/latest/consensus.html">hyperchain RBFT说明文档</a></p>
+<p>[7].<a target="_blank" rel="noopener" href="https://blog.csdn.net/TurkeyCock/article/details/81672759">PBFT实用拜占庭容错算法深入详解</a></p>
+<p>[8]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/56780298">共识 | 拜占庭容错的代表 PBFT</a></p>
+<p>[9]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/78010422">详解实用拜占庭容错协议</a></p>
 
                 </section>
 
