@@ -78,7 +78,7 @@
 
         
                     <div class="al_page_content_outline">
-                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Prerequist"><span class="toc-text">Prerequist</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B1%E8%AF%86%E9%97%AE%E9%A2%98-Consensus-Problem"><span class="toc-text">共识问题 (Consensus Problem)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-text">概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CFT-amp-BFT"><span class="toc-text">CFT &amp; BFT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FLP-%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%8E%9F%E7%90%86"><span class="toc-text">FLP 不可能原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E5%86%9B%E9%97%AE%E9%A2%98"><span class="toc-text">两军问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%9C%E5%8D%A0%E5%BA%AD%E5%B0%86%E5%86%9B%E9%97%AE%E9%A2%98"><span class="toc-text">拜占庭将军问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quorum%E6%9C%BA%E5%88%B6-Quorum-intersection"><span class="toc-text">Quorum机制 (Quorum intersection)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PBFT-%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95"><span class="toc-text">PBFT 共识算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD%E4%B8%8E%E5%8F%98%E9%87%8F"><span class="toc-text">术语与变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%A6%E5%AE%9A%E5%8F%98%E9%87%8F"><span class="toc-text">约定变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD"><span class="toc-text">术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E5%AE%9A%E5%8F%98%E9%87%8F"><span class="toc-text">推定变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3"><span class="toc-text">主要思想</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E6%B5%81%E7%A8%8B-normal-case"><span class="toc-text">常规流程 normal-case</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%AE%9A%E4%B9%89"><span class="toc-text">初始定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E5%87%86%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B"><span class="toc-text">标准算法流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#State"><span class="toc-text">State</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Three-Phase-Protocol"><span class="toc-text">Three Phase Protocol</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%A7%8D%E4%BC%98%E5%8C%96%E6%B5%81%E7%A8%8B"><span class="toc-text">一种优化流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E7%82%B9%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6"><span class="toc-text">检查点机制与垃圾回收</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE%E5%8F%98%E6%9B%B4%E6%B5%81%E7%A8%8B-view-change"><span class="toc-text">视图变更流程 view-change</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E5%87%86VC%E6%B5%81%E7%A8%8B"><span class="toc-text">标准VC流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-1"><span class="toc-text">数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#view-change-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">view-change 数据结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#New-view-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">New-view 数据结构</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%A7%8D%E4%BC%98%E5%8C%96%E6%B5%81%E7%A8%8B-1"><span class="toc-text">一种优化流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E6%81%A2%E5%A4%8D%E6%B5%81%E7%A8%8B"><span class="toc-text">主动恢复流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E4%B8%BB%E6%81%A2%E5%A4%8D%E6%B5%81%E7%A8%8B"><span class="toc-text">自主恢复流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E6%81%A2%E5%A4%8D"><span class="toc-text">主动恢复</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E8%8A%82%E7%82%B9%E6%B5%81%E7%A8%8B"><span class="toc-text">增删节点流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E8%8A%82%E7%82%B9"><span class="toc-text">增删节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E8%8A%82%E7%82%B9%E6%B5%81%E7%A8%8B"><span class="toc-text">新增节点流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%E6%A6%82%E5%BF%B5"><span class="toc-text">附加概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E6%98%93%E6%B1%A0"><span class="toc-text">交易池</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-text">常见问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">参考文献</span></a></li></ol>
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Prerequist"><span class="toc-text">Prerequist</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B1%E8%AF%86%E9%97%AE%E9%A2%98-Consensus-Problem"><span class="toc-text">共识问题 (Consensus Problem)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E7%B1%BB%E5%9E%8B%E4%B8%8E%E9%94%99%E8%AF%AF%E5%AE%B9%E5%BF%8D-Fault-Tolerance"><span class="toc-text">错误类型与错误容忍(Fault Tolerance)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FLP%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%BB%93%E8%AE%BA"><span class="toc-text">FLP不可能结论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quorum%E6%9C%BA%E5%88%B6-Quorum-intersection"><span class="toc-text">Quorum机制 (Quorum intersection)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95%E7%B1%BB%E5%9E%8B"><span class="toc-text">共识算法类型</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PBFT-%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95"><span class="toc-text">PBFT 共识算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD%E4%B8%8E%E5%8F%98%E9%87%8F"><span class="toc-text">术语与变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%A6%E5%AE%9A%E5%8F%98%E9%87%8F"><span class="toc-text">约定变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AF%E8%AF%AD"><span class="toc-text">术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E5%AE%9A%E5%8F%98%E9%87%8F"><span class="toc-text">推定变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PBFT-%E4%B8%BB%E8%A6%81%E6%80%9D%E6%83%B3"><span class="toc-text">PBFT 主要思想</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%84%E6%B5%81%E7%A8%8B-normal-case"><span class="toc-text">常规流程 normal-case</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%AE%9A%E4%B9%89"><span class="toc-text">初始定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E5%87%86%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B"><span class="toc-text">标准算法流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#State%E7%8A%B6%E6%80%81%E6%95%B0%E6%8D%AE"><span class="toc-text">State状态数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Three-Phase-Protocol"><span class="toc-text">Three Phase Protocol</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%A7%8D%E4%BC%98%E5%8C%96%E6%B5%81%E7%A8%8B"><span class="toc-text">一种优化流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E7%82%B9%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6"><span class="toc-text">检查点机制与垃圾回收</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E5%9B%BE%E5%8F%98%E6%9B%B4%E6%B5%81%E7%A8%8B-view-change"><span class="toc-text">视图变更流程 view-change</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E5%87%86VC%E6%B5%81%E7%A8%8B"><span class="toc-text">标准VC流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-1"><span class="toc-text">数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#view-change-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">view-change 数据结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#New-view-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">New-view 数据结构</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%A7%8D%E4%BC%98%E5%8C%96%E6%B5%81%E7%A8%8B-1"><span class="toc-text">一种优化流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E6%81%A2%E5%A4%8D%E6%B5%81%E7%A8%8B"><span class="toc-text">主动恢复流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E4%B8%BB%E6%81%A2%E5%A4%8D%E6%B5%81%E7%A8%8B"><span class="toc-text">自主恢复流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%8A%A8%E6%81%A2%E5%A4%8D"><span class="toc-text">主动恢复</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E8%8A%82%E7%82%B9%E6%B5%81%E7%A8%8B"><span class="toc-text">增删节点流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A2%9E%E5%88%A0%E8%8A%82%E7%82%B9"><span class="toc-text">增删节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E8%8A%82%E7%82%B9%E6%B5%81%E7%A8%8B"><span class="toc-text">新增节点流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%84%E5%8A%A0%E6%A6%82%E5%BF%B5"><span class="toc-text">附加概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E6%98%93%E6%B1%A0"><span class="toc-text">交易池</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-text">常见问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">参考文献</span></a></li></ol>
                     </div>
         
             
@@ -109,7 +109,7 @@
 
                         
                             <div class="al_page_content_info">
-                               共 14.4k 词
+                               共 14.2k 词
                             </div>
                         
 
@@ -124,54 +124,54 @@
 
                 
                 <section id="post-body">
-                    <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>在一个分布式系统当中，需要提供可靠服务，数据操作的冗余是必要的。假设现在我们有一个分布式数据库集群，其中的服务器节点会相互同步数据。那么如果一切顺利，我们只需要把数据写入其中一台服务器，集群中的所有服务器就都会同步到写入的数据。但是，事情往往没有这么简单，这台写入的服务器可能会宕机，或者会断网，甚至会有bug，就不同步数据了。那么我们之前的写入操作实际上是失败的。同样地，如果我们随便挑一台服务器读取数据，一切正常当然没有问题，但是如果这台服务器同步慢了，或者前面的写操作没有写到这台服务器，那么我们读取的值也是不对的。所以，写入或者读取多少台服务器的结果最后能够确定这次操作是成功的呢？</p>
-<p>这个服务器数量，就是所谓的 <code>quorum</code>，一般来讲，写入数据，只需要达到 <code>quorum</code> 台服务器，我们就可以认为写入成功，读取数据的时候，只需要读取 <code>quorum</code> 台服务器，就可以认为读取的结果是正确的，并且是全网一致的。</p>
-<p>当然很明显，这个值是取决于分布式集群所有服务器的数量的，全网服务器数量越多，<code>quorum</code> 越大，也显而易见地，如果 <code>quorum</code> 越大，那么我们需要操作的服务器数量就越多，所需要花费的时间和资源也越大。</p>
-<p>那么，<code>quorum</code> 应该是多大比较合适呢？</p>
-<p>在集群的数据同步过程当中，存在集中情况，就是使用这个数据库集群的人非常多，免不了同时操作，那么如果同时有两个人进行写入操作，比方说Alice写入 <code>A = 2</code> 然后 Bob 写入 <code>A =3</code> ，最后结果应该是怎么样的呢？显然，一半服务器接受 <code>A=3</code> 另一半接受 <code>A=4</code>是不合理的，这就出现了集群脑裂的情况，那么应该如何避免上述脑裂情况呢？</p>
-<p>还有一种情况，如果在读取数据库的过程当中，读取其中一部分服务器的值为 <code>A=2</code>， 另一部分值为 <code>A=3</code> 显然类似于脑裂，但是也可能是集群没有同步数据完成，那么，我们读取的这一部分服务器的数量是多少才能避免上述情况的发生呢？ </p>
-<p>上述问题将会在下文中进行解答。</p>
-<h1 id="Prerequist"><a href="#Prerequist" class="headerlink" title="Prerequist"></a>Prerequist</h1><h2 id="共识问题-Consensus-Problem"><a href="#共识问题-Consensus-Problem" class="headerlink" title="共识问题 (Consensus Problem)"></a>共识问题 (Consensus Problem)</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>分布式系统的共识问题（Consensus Problem）是指寻找一种协议，使得该协 议满足以下三大属性：</p>
+                    <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>在一个分布式系统当中，如果需要提供可靠服务，数据操作（读写）的冗余是必要的。假设现在我们有一个分布式数据库集群，其中的服务器节点会相互同步数据。一种简单的思维，如果网络正常，服务器稳定，一切顺利，我们只需要把数据写入其中一台服务器，集群中的所有服务器就都会同步到写入的数据。但事情往往没有这么简单，实际上这台写入的服务器可能会宕机、断网，甚至代码也会有bug，这些问题都有可能导致数据同步失败，之前的写入操作实际上有可能是失败的，所有服务器无法同步到数据。同样地，如果写入成功，我们随便挑一台服务器读取数据就没有问题了吗？如果这台服务器同步速度慢一些，那么我们读取的值也是不对的。那么，如果我们在写入的时候多写如几台服务器不就好了，一种极端思维是我写入所有服务器，这样当然所有服务器上的数据都是最新的；在读取的时候我们也可以读所有服务器，这样一定能够读到最新的数据，但是这样显然很耗费资源，我们能不能读写一部分也能够得到确定的最新结果呢，如果可以的话，读写多少服务器比较合适呢？</p>
+<p>这个服务器数量，就是所谓的 <code>quorum</code>，一般来讲，在写入数据的时候，只需要达到 <code>quorum</code> 台服务器，我们就可以认为写入成功，同样地，在读取数据的时候，只需要读取 <code>quorum</code> 台服务器，就可以认为读取的结果是正确的，并且是最新的。</p>
+<p>显然这个<code>quorum</code>值是取决于分布式集群所有服务器的数量的，全网服务器数量越多，<code>quorum</code> 越大，当然，如果 <code>quorum</code> 越大，那么需要操作的服务器数量就越多，操作开销也越大。</p>
+<p>那么，<code>quorum</code>  多大比较合适呢？</p>
+<p>在集群的数据同步过程当中，存在几种情况：</p>
+<p>一是并发操作，就是多人同时操作数据集群，如果有两个人进行写入操作，比如 Alice写入 <code>A = 2</code>， 同时 Bob 写入 <code>A =3</code> ，如果一半服务器接受 <code>A=3</code>，而另一半接受 <code>A=4</code> 是不行的，这就出现了集群脑裂的情况，为了避免这个情况，要求我们至少写入集群中的多数节点。</p>
+<p>另一种是非串行化读写，如果我们在写入数据的完成之后，用户立即来读取数据了，但是恰好用户读取的服务器还没有同步到最新数据，用户读的数据是过时的，这样也是不对的，我们应该保证，写入成功之后，读取的值应该是上次写入之后的结果，所以我们至少要读到一个写入操作过的节点。</p>
+<p>那么写入操作和读取操作至少都需要多少个节点才能保证上述情况不会发生呢？问题将会在下文中揭晓。</p>
+<h1 id="Prerequist"><a href="#Prerequist" class="headerlink" title="Prerequist"></a>Prerequist</h1><h2 id="共识问题-Consensus-Problem"><a href="#共识问题-Consensus-Problem" class="headerlink" title="共识问题 (Consensus Problem)"></a>共识问题 (Consensus Problem)</h2><p>分布式系统的共识问题（Consensus Problem）是指寻找一种协议，使得该协 议满足以下三大属性：</p>
 <ol>
 <li>一致性（Agreement）：所有的非缺陷进程都必须同意一个值；</li>
 <li>正确性（Validity）：所有非缺陷进程所同意的值必须来之非故障进程所提案的值；</li>
 <li>可结束性（Termination）：每个非缺陷的进程必须最终确定一个值。</li>
 </ol>
-<p>通常也把一致性和正确性合称安全性（Safety），把可结束性称为活性 （Liveness），而在分布式系统的算法和设计中， 安全性和活性是 2 个非常重要的属性，更通俗地讲，这 2 个属性的含义是：</p>
+<p>通常也把一致性和正确性合称安全性（Safety），把可结束性称为活性 （Liveness），而在分布式系统的算法和设计中， 安全性和活性是两个非常重要的属性，更通俗地讲，这两个属性的另一种解释是：</p>
 <ul>
-<li>安全性 (Safety)：错误的值永远不会被采用（something “bad” will never happen）；</li>
-<li> 活性 (Liveness)：最终正确的值将会被确定并同意，但是无法确定时间 （ something “good” will must happen, but we don’t know when）</li>
+<li> <strong>安全性 (Safety)</strong> ：错误的值永远不会被采用（something “bad” will never happen）；</li>
+<li>  <strong>活性 (Liveness)</strong> ：最终正确的值将会被确定并同意，但是无法确定时间 （ something “good” will must happen, but we don’t know when）</li>
 </ul>
-<p>上述的术语比较抽象，简单解释为：</p>
+<p>也可通俗解释为：</p>
 <ul>
-<li><p>活性 (Liveness) 就是集群能够确定一个值，通常来讲就是少数服从多数；</p>
+<li><p>活性 (Liveness)  就是集群能够确定一个值，通常来讲就是少数服从多数；</p>
 </li>
-<li><p>安全性 (Safety)就是集群能够确定的值是正确值，而不是错误值。</p>
+<li><p>安全性 (Safety) 就是集群能够确定的值是正确值，而不是错误值。</p>
 </li>
 </ul>
-<h3 id="CFT-amp-BFT"><a href="#CFT-amp-BFT" class="headerlink" title="CFT &amp; BFT"></a>CFT &amp; BFT</h3><p>TODO</p>
-<p>对于分布式系统来说，如果节点间通信十分顺畅，各个节点都能瞬间响应，那么只需要简单广播投票和应答就可以解决一致性问题。然后现实并不是这样。节点往往会遇到网络中断、节点故障，甚至是被非法入侵伪造消息的问题。节点遇到的问题可以进行如下的分类：</p>
+<h2 id="错误类型与错误容忍-Fault-Tolerance"><a href="#错误类型与错误容忍-Fault-Tolerance" class="headerlink" title="错误类型与错误容忍(Fault Tolerance)"></a>错误类型与错误容忍(Fault Tolerance)</h2><p>错误容忍指的是一个系统在其的某些部件出现错误之后依旧能够继续正常工作，这种能力叫做错误容忍。</p>
+<p>在分布式系统当中可能出现的错误主要有两种：</p>
 <ul>
-<li>  节点出现故障但不会伪造信息的情况称为 “非拜占庭错误”；</li>
-<li>  节点会伪造信息恶意响应的情况称为 “拜占庭错误”，伪造信息的节点称为拜占庭节点。</li>
+<li><p>CF (Crash Fault)：宕机故障，系统中的某些节点可能出现宕机故障，不会响应请求，但是不会恶意响应；</p>
+</li>
+<li><p>BF (Byzantine Fault): 拜占庭故障，系统中的某些节点可能出现拜占庭故障，可能会不响应请求，也可能错误响应请求；</p>
+</li>
 </ul>
-<p>相对应的，共识算法也可以分为 CFT 和 BFT 两类：</p>
+<blockquote>
+<p> 出现拜占庭故障的节点我们称为拜占庭节点。</p>
+</blockquote>
 <ul>
-<li>  CFT（Crash Fault Tolerance）：只容忍节点故障，不容忍节点作恶；</li>
-<li>  BFT（Byzantine Fault Tolerance）：容忍节点故障与作恶。</li>
+<li>能够容忍宕机故障的系统我们称为CFT（Crash Fault Tolerance）系统</li>
+<li>能够容忍拜占庭故障的系统我们称为BFT（Crash Fault Tolerance）系统</li>
 </ul>
-<h3 id="FLP-不可能原理"><a href="#FLP-不可能原理" class="headerlink" title="FLP 不可能原理"></a>FLP 不可能原理</h3><p>TODO</p>
-<p>计算机科学家证明了：在网络可靠，但允许节点失效的最小化异步系统中，不存在一个可以解决一致性问题的确定性共识算法。这似乎意味着去设计一个共识算法是徒劳的，然而科学告诉你什么是不可能的；工程则告诉你，付出一些代价，可以把它变成可行。也就是说在付出多大的代价的情况下，能够达到共识。</p>
-<h3 id="两军问题"><a href="#两军问题" class="headerlink" title="两军问题"></a>两军问题</h3><p>TODO</p>
-<p>白军驻扎在沟渠里，蓝军和红军分别驻扎在沟渠两边。白军比蓝军和红军中任何一支军队都更为强大，但是蓝军和红军若能同时合力进攻则能够打败白军。蓝军和红军不能够越过沟渠远程地沟通，只能派遣通信兵穿过沟渠去通知对方协商进攻时间。但是通信兵可能会迷路或者被敌军截获，消息被篡改。</p>
-<p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glfdvtz8xbj30je0b0mxu.jpg"></p>
-<p>根据 已有证明这个问题无通用解，然而这一问题在通信领域又必须解决。基于成本可控的考虑，现在使用 TCP 协议的三次握手来（不彻底的）解决这一问题。</p>
-<h3 id="拜占庭将军问题"><a href="#拜占庭将军问题" class="headerlink" title="拜占庭将军问题"></a>拜占庭将军问题</h3><p>TODO</p>
-<p>要保障系统不同程度的一致性，就需要共识算法来完成。共识算法解决的是分布式系统对某个提案（Proposal），所有诚实节点达成一致意见的过程。那么共识需要解决的问题可以做如下的抽象：</p>
-<ul>
-<li>  如何提出一个待共识的提案？</li>
-<li>  如何让多个节点对该提案达成共识？</li>
-</ul>
+<h2 id="FLP不可能结论"><a href="#FLP不可能结论" class="headerlink" title="FLP不可能结论"></a>FLP不可能结论</h2><p>分布式系统理论中最重要的结果之一是由Fischer，Lynch和Patterson于1985年4月发表的短篇论文” <a target="_blank" rel="noopener" href="http://cs-www.cs.yale.edu/homes/arvind/cs425/doc/fischer.pdf">Impossibility of Distributed Consensus with One Faulty Process’</a>，该论文最终确定了异步环境中分布式过程可以实现的目标的上限，并获得了分布式计算领域最有影响力论文的Dijkstra奖。</p>
+<p>这个论文的结论称为“ FLP不可能结论”，解决了过去五到十年在分布式理论研究中一直存在的争议。众所周知，共识问题在同步系统中可以解决。非正式描述为，同步模型通过等待一个完整的步长等待来自处理器的答复，并假设如果未收到答复而崩溃，则可以检测到故障。</p>
+<p>在异步系统中，这种故障检测是不可能的，在异步设置中，处理器完成工作然后响应消息所花费的时间没有限制。因此，无法确定处理器是否崩溃还是花费了很长时间进行响应。</p>
+<p> FLP结论表明，在异步系统中，如果有一个进程可能出现崩溃，则没有解决共识问题的分布式算法。</p>
+<blockquote>
+<p>科学告诉我们什么是不可能的；工程则告诉我们，可以付出一些代价，将不可能变成可行。</p>
+</blockquote>
 <h2 id="Quorum机制-Quorum-intersection"><a href="#Quorum机制-Quorum-intersection" class="headerlink" title="Quorum机制 (Quorum intersection)"></a>Quorum机制 (Quorum intersection)</h2><p>Quorum 机制，是一种分布式系统中常用的，用来保证数据冗余和最终一致性的投票算法，其主要数学思想来源于鸽巢原理。Quorum 系统可以定义为一组集合（称为 Quorum 集合）这组集合满足一定的相交属性。在有冗余数据的分布式存储系统当中，冗余数据对象会在不同的机器之间存放多份拷贝。但是同一时刻一个数据对象的多份拷贝只能用于读或者用于写。</p>
 <p>在分布式系统中，冗余数据是保证可靠性的手段，因此冗余数据的一致性维护就非常重要。一般而言，一个写操作必须要对所有的冗余数据都更新完成了，才能称为成功结束。比如一份数据在5台设备上有冗余，因为不知道读数据会落在哪一台设备上，那么一次写操作，必须5台设备都更新完成，写操作才能返回。对于写操作比较频繁的系统，这个操作的瓶颈非常大。</p>
 <p>Quorum算法可以让写操作只要写完3台就返回。剩下的由系统内部缓慢同步完成。而读操作，则需要也至少读3台，才能保证至少可以读到一个最新的数据。</p>
@@ -199,6 +199,7 @@
 <li><p>公式 (5) 说明了串行化原则，一个系统不能同时进行两个不同的写入操作，交集属性确保任何读取操作都可以访问已写入的最新值，能够保证读写操作的正确性。</p>
 </li>
 </ul>
+<h2 id="共识算法类型"><a href="#共识算法类型" class="headerlink" title="共识算法类型"></a>共识算法类型</h2><p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgobti2ayj30u10u0top.jpg" alt="Image for post"></p>
 <h1 id="PBFT-共识算法"><a href="#PBFT-共识算法" class="headerlink" title="PBFT 共识算法"></a>PBFT 共识算法</h1><p>PBFT 是 Practical Byzantine Fault Tolerance 的缩写，意为实用拜占庭容错算法。</p>
 <p>该算法首次将拜占庭容错算法复杂度从指数级降低到了多项式级，其可以在恶意节点不高于总数 1/3 的情况下同时保证安全性（Safety）和活性（Liveness）。</p>
 <h2 id="术语与变量"><a href="#术语与变量" class="headerlink" title="术语与变量"></a>术语与变量</h2><h3 id="约定变量"><a href="#约定变量" class="headerlink" title="约定变量"></a>约定变量</h3><ul>
@@ -219,17 +220,18 @@
 </ul>
 <h3 id="推定变量"><a href="#推定变量" class="headerlink" title="推定变量"></a>推定变量</h3><hr>
 <blockquote>
-<p>笔者在撰写本小节的时候，阅读了很多博客和文章，很多解释都模棱两可，没有真正讲清楚，我也尝试来解释一下 3f + 1的问题。</p>
+<p>在撰写本小节的时候，阅读了很多博客和文章，很多解释都模棱两可，没有真正讲清楚，笔者也尝试来解释一下 3f + 1的问题。</p>
 </blockquote>
-<p>首先在一个分布式系统当中，需要提供可靠服务，数据冗余是必要的。假设我们在一个分布式数据库上写入数据，不可以只写入集群中的某一台服务器就认为成功了，因为这个服务器可能会宕机，可能会有bug，但是，我们要写入多少服务器才算成功呢？在写入成功之后，我们会去读取写入的数据，同样地，如果我们随便挑一台服务器读取，一切顺利当然是没有问题的，但是如果这台服务器同步慢了，或者前面的写操作没有写到这台服务器，那么我们读取的值也是不对的。所以，读取多少台服务器的结果最后能够确定这个结果是正确的呢？</p>
-<p>这个数量，就是所谓的 <code>quorum</code> ,一般来讲，写入数据，只需要达到 quorum 台服务器，我们就可以认为写入成功，读取数据的时候，只需要读取<code>quorum</code>台服务器，就可以认为读取的结果是正确的，并且是全网一致的。</p>
-<p>当然很明显，这个值是取决于分布式集群所有服务器的数量的，全网服务器数量越多，<code>quorum</code> 越大。</p>
+<p>引言中我们抛出了一个问题，在分布式系统中需要读写多少台节点才可以满足正确性要求，即<code>quorum</code> 的值为多少比较合适？</p>
+<p><code>quorum</code> 的值是根据不同的情形需要单独处理的，简单而言，在CFT系统当中，只需要达到<code>2f + 1</code>就可以了，因为每次操作都已经达到多数，不管读写我们都能够达成，满足 Quorum intersection 的要求。</p>
+<p>但是在BFT系统中，则不一样，下文将进行分析。</p>
 <blockquote>
-<p>笔者在理解这个quorum的过程中一直有一个误区，那就是拜占庭节点和故障节点是不能同时存在的，其实不是的，在PBFT中，是允许同时存在故障节点和拜占庭节点的，所以才会有3f+1，如果只允许拜占庭节点存在的话，其实2f+1是可以满足要求的。</p>
+<p>在BFT中，是允许同时存在故障节点和拜占庭节点的，所以才要求 <code>3f+1</code>，如果只允许拜占庭节点存在的话，其实 <code>2f+1</code> 也是可以满足要求的。</p>
 </blockquote>
 <p>在一个由 $N$ 个节点组成的共识网络中，RBFT 最多能容忍$f$个节点的拜占庭错误，其中：<br>$$<br>f=\lfloor \frac{N−1}{3} \rfloor<br>$$<br>而能够保证达成共识的节点个数为：<br>$$<br>quorum=\lceil \frac{N+f+1}{2}\rceil<br>$$<br>那么这些值都是如何确定的呢？</p>
 <p>已知节点集合为 $N$, 拜占庭错失效节点集合为 $F$， 宕机或者是未访问的节点集合为 $X$ ，访问的最小节点集合($quorum$)为$Q$。</p>
-<p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glfdvtl2rxj30g807574j.jpg" alt="img"></p>
+<img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgq9fmw8cj30sz0csq3m.jpg" alt="interset" style="zoom:48%;" />
+
 <blockquote>
 <p>以上图为例，quorum = 3, 即一个黑色框选的范围，黑色框未框选的节点可能是有效节点，也可能是无效节点（黑色节点）。未框选的部分为$X$。</p>
 </blockquote>
@@ -269,7 +271,7 @@
 </ol>
 </blockquote>
 <p>这种解释，第一种情况是没有问题的，很好理解，但是在第二种情况中，故障节点和作恶节点是否加在一起是“有问题节点”这个点其实有点混乱了，按照第二种解释的说法，故障节点和作恶节点都有<code>f</code>个，那当然很容易就推出来需要<code>f+1</code>个节点正常，<code>N= 3f+1</code>，但其实应该是，故障节点和作恶节点总共加起来一共 <code>f</code> 个，这种解释其实举个例子就可以说明了，假设我们现在一共有4个节点，其中一个是拜占庭节点，一个是宕机节点，集群中只有两个节点可以正常工作，其实整个算法运行不起来的。</p>
-<h2 id="主要思想"><a href="#主要思想" class="headerlink" title="主要思想"></a>主要思想</h2><p>PBFT 的主要思想是：</p>
+<h2 id="PBFT-主要思想"><a href="#PBFT-主要思想" class="headerlink" title="PBFT 主要思想"></a>PBFT 主要思想</h2><p>PBFT 的主要思想其实是：</p>
 <ol>
 <li>将节点数量固定（3f +1）</li>
 <li>通过三阶段来处理恶意主节点</li>
@@ -289,16 +291,17 @@
 <li><code>d(m)</code> ，是<code>m</code>的密码学摘要信息 (digest)</li>
 </ul>
 <h3 id="标准算法流程"><a href="#标准算法流程" class="headerlink" title="标准算法流程"></a>标准算法流程</h3><p><strong>算法示意图</strong></p>
-<img src="https://tva1.sinaimg.cn/large/0081Kckwly1glfiz29ybcj30vr0itq5x.jpg" alt="image-20201207193837576" style="zoom:50%;" />
+<img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgqxf21y0j30zx0f1tcx.jpg" alt="PBFT-normal-case" style="zoom:48%;" />
 
 <div><p style="font-size: 12px; color: #3f3f3f; text-align: center;">BFT算法主要流程</p></div>
 
-<p>也看到过其他的流程示意图，包括原论文当中的示意图：</p>
+<p>原论文(osdi99)中是要求客户端直接把请求发送给主节点的，我觉得可以辩证理解，有可能此时这个主节点有问题，需要切换主节点，这个过程客户端感知是比较滞后的，略有缺陷，所以我选了一张更加合适的图作为示意。原论文当中的示意图：</p>
 <img src="https://tva1.sinaimg.cn/large/0081Kckwly1glg62g8azxj30k809s75b.jpg" alt="image-20201207194044414" style="zoom:50%;" />
 
 <div><p style="font-size: 12px; color: #3f3f3f; text-align: center;">BFT算法主要流程 (osdi99)</p></div>
 
-<p>原论文(osdi99)中是要求客户端直接把请求发送给主节点的，我觉得可以辩证理解，有可能此时这个主节点有问题，需要切换主节点，这个过程客户端感知是比较滞后的，略有缺陷，所以我选了一张更加合适的图作为示意。</p>
+
+
 <p><strong>算法核心过程（正常流程）</strong></p>
 <ul>
 <li><p><strong>STEP 1</strong>: 客户端发送请求给主节点（或者发给所有节点），图示是发给所有节点的。之后主节点将会触发三阶段协议，但是这里有一个优化，节点可以先把请求缓存起来，等到攒够一堆请求之后再一起发送，这样可以降低网络开销和系统负载，这个优化是可选的。</p>
@@ -350,7 +353,7 @@
 </li>
 <li><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgkzu71tpj30g50ej77y.jpg" alt="image-20201208092428667" style="zoom:50%;" align="center"/>
 
-<div><p style="font-size: 12px; color: #3f3f3f; text-align: center; margin-left: 100px">prepared 状态证明</p></div>
+<div><p style="font-size: 12px; color: #3f3f3f; text-align: center;">prepared 状态证明</p></div>
 </li>
 <li><p>上图解释了为什么能够确定诚实节点已经准备好了，其中的 <code>v</code> = <code>v#</code>， <code>n</code> = <code>seq#</code></p>
 </li>
@@ -379,21 +382,22 @@
 </li>
 </ul>
 <p>整个过程不需要要求所有的消息是有序到达的，因为<code>seq#</code>会保证顺序，只需要对应的<code>pre-prepare</code>， <code>prepare</code>和<code>commit</code>消息都是完整的即可。</p>
-<h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><h4 id="State"><a href="#State" class="headerlink" title="State"></a>State</h4><p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgkzsfjx5j303i03jdfr.jpg"></p>
+<h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><h4 id="State状态数据"><a href="#State状态数据" class="headerlink" title="State状态数据"></a>State状态数据</h4><p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgkzsfjx5j303i03jdfr.jpg"></p>
 <p>节点的状态主要包含三部分：</p>
 <ul>
-<li>  世界状态（即最新区块信息）</li>
+<li>  世界状态，包括已经处理过的交易</li>
 <li>  消息日志</li>
 <li>  当前 view</li>
 </ul>
 <h4 id="Three-Phase-Protocol"><a href="#Three-Phase-Protocol" class="headerlink" title="Three Phase Protocol"></a>Three Phase Protocol</h4><p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgkzpunv6j30mo04pjse.jpg"></p>
 <p>这里列出了三阶段协议相关的消息结构，其中 PRE-PREPARE 消息包含新生成的区块，其他消息则主要包含一些 id、sequence number、区块内容摘要和签名等信息。</p>
 <h3 id="一种优化流程"><a href="#一种优化流程" class="headerlink" title="一种优化流程"></a>一种优化流程</h3><blockquote>
-<p>以下是公开资料收集的 Hyperchain 优化之后的RBFT算法</p>
+<p>以下是基于公开资料收集的 Hyperchain 优化之后的RBFT算法</p>
 </blockquote>
-<p>RBFT 共识保留了 PBFT 原有的三阶段处理流程（<code>pre-prepare</code>、<code>prepare</code>、<code>commit</code>）的同时增加了重要的交易验证（<code>validate</code>）环节，在保证对交易执行顺序达成共识的同时也保证了对区块验证结果的共识。</p>
-<p><img src="https://hyperchain.readthedocs.io/zh_CN/latest/_images/normal.png"></p>
-<p>RBFT 常规流程在原生的 PBFT 算法中穿插了交易验证环节，主节点将交易打包成块后先行验证，并将验证结果包含到 <code>pre-prepare</code> 消息中进行全网广播，这样 <code>pre-prepare</code> 消息中既包含了排好序的交易信息也包含了区块验证结果。</p>
+<img src="https://tva1.sinaimg.cn/large/0081Kckwly1glhdqo7gqkj314u0i4djz.jpg" alt="optimistic" style="zoom:48%;" />
+
+<p>RBFT 做的优化之一是，客户端发送请求到任意节点，如果这个节点不是主节点的话，将会进行一次广播。</p>
+<p>优化之二是，主节点收到交易之后会进行验证，并把验证结果放在<code>pre-prepare</code>中进行再全网广播，<code>pre-prepare</code>是以区块为单位处理的，这样的 <code>pre-prepare</code> 消息中既包含了排好序的交易信息也包含了区块验证结果。</p>
 <p>从节点在收到主节点的 <code>pre-prepare</code> 消息后先检查消息的合法性，检查通过后广播 <code>prepare</code> 消息表明本节点同意主节点的排序结果；在收到 <code>quorum-1</code>  (即<code>2f</code> )个 <code>prepare</code> 消息后从节点才会开始验证区块，并将验证结果与主节点的验证结果进行比对，比对结果一致则广播<code> commit</code> 表明本节点同意主节点的验证结果，否则直接发起 <code>view-change</code> 表明本节点认为主节点有异常行为。</p>
 <p>RBFT 常规流程具体分为如下几个步骤：</p>
 <ul>
@@ -403,19 +407,16 @@
 <p>共识节点就是参与RBFT共识过程的节点，记账节点是不参与共识，只接受结果并写入区块的节点</p>
 </blockquote>
 <ul>
-<li><strong>PrePrepare 阶段：</strong>主节点按照如下策略进行打包：用户可以根据需求自定义打包的超时时间（batch timeout）与打包的最大区块大小（batch size），主节点在超时时间内收集到了足够多（超过最大区块大小个数）的交易或者超时时间到达后仍未收集到足够多的交易都会触发主节点的打包事件。主节点将交易按照接收的时间顺序打包成块，并进行验证，计算执行结果，最后将定序好的交易信息连同验证结果等写入 <code>pre-prepare</code> 消息中广播给所有共识节点，开始三阶段处理流程；</li>
+<li><p><strong>PrePrepare 阶段：</strong>主节点按照如下策略进行打包：用户可以根据需求自定义打包的超时时间（batch timeout）与打包的最大区块大小（batch size），主节点在超时时间内收集到了足够多（超过最大区块大小个数）的交易或者超时时间到达后仍未收集到足够多的交易都会触发主节点的打包事件。主节点将交易按照接收的时间顺序打包成块，并进行验证，计算执行结果，最后将定序好的交易信息连同验证结果等写入 <code>pre-prepare</code> 消息中广播给所有共识节点，开始三阶段处理流程；</p>
+</li>
+<li><p><strong>Prepare 阶段：</strong> 从节点在收到主节点的 <code>pre-prepare</code> 消息后，首先进行消息合法性检查，检查当前的视图与序列号号等信息，检查通过后向共识节点广播 <code>prepare</code> 消息；</p>
+</li>
+<li><p><strong>Commit 阶段：</strong>从节点在收到<code>quorum-1</code> 即(<code>2f</code>) 个<code>prepare</code> 消息以及相应的 <code>pre-prepare</code> 消息后进行验证，并将验证结果与主节点写入<code>pre-prepare</code>  消息中的验证结果进行比对，比对结果一致则广播 <code>commit</code> 表明本节点同意主节点的验证结果，否则直接发起 <code>view-change</code> 表明本节点认为主节点存在异常行为，需要切换主节点；</p>
+</li>
+<li><p><strong>写入账本：</strong>所有共识节点在收到 quorum 个 <code>commit</code> 消息后将执行结果写入本地账本。</p>
+</li>
 </ul>
-<ul>
-<li><strong>Prepare 阶段：</strong> 从节点在收到主节点的 <code>pre-prepare</code> 消息后，首先进行消息合法性检查，检查当前的视图与序列号号等信息，检查通过后向共识节点广播 <code>prepare</code> 消息；</li>
-</ul>
-<blockquote>
-<p>通常来讲，这部分需要给后面的 <code>commit</code> 预留资源</p>
-</blockquote>
-<ul>
-<li><strong>Commit 阶段：</strong>从节点在收到<code>quorum-1</code> 即(<code>2f</code>) 个<code>prepare</code> 消息以及相应的 <code>pre-prepare</code> 消息后进行验证，并将验证结果与主节点写入<code>pre-prepare</code>  消息中的验证结果进行比对，比对结果一致则广播 <code>commit</code> 表明本节点同意主节点的验证结果，否则直接发起 <code>view-change</code> 表明本节点认为主节点存在异常行为，需要切换主节点；</li>
-<li><strong>写入账本：</strong>所有共识节点在收到 quorum 个 <code>commit</code> 消息后将执行结果写入本地账本。</li>
-</ul>
-<h3 id="检查点机制与垃圾回收"><a href="#检查点机制与垃圾回收" class="headerlink" title="检查点机制与垃圾回收"></a>检查点机制与垃圾回收</h3><p>在上述过程当中，我们发现整体流程都写入了很多日志，基本上每一轮都会产生很多日志缓存；如此下去明显系统存储是不够用的，为了解决上述问题，PBFT引入了垃圾回收（GC）机制，通过检查点 (checkpoint)来进行垃圾回收。</p>
+<h3 id="检查点机制与垃圾回收"><a href="#检查点机制与垃圾回收" class="headerlink" title="检查点机制与垃圾回收"></a>检查点机制与垃圾回收</h3><p>在上述过程当中，整体流程每个阶段都写入了日志，基本上每一轮都会产生很多日志缓存；如此下去明显系统存储是不够用的，为了解决上述问题，PBFT引入了垃圾回收（GC）机制，通过检查点 (checkpoint)来进行垃圾回收。</p>
 <p>共识过程中的日志<code>log</code>需要一直保存在节点中，一直到这个日志状态已经被至少 <code>f+1</code> 个非拜占庭副本节点处理过了，并且在view-change过程当中需要能够将这个已经处理过的日志证明给其他节点。</p>
 <p>进一步地，还有一种情况是，如果一些副本节点因为某些原因落后了，但是其他非拜占庭节点已经把一些消息都清除了，落后的节点无法通过日志跟上，只能通过直接同步状态跟上，其他节点也需要证明上述状态是合法的。</p>
 <p>当然生成这样的证明的成本是高昂的，所以我们不需要每个区块都生成一次，通常来说周期性生成一次比较好，一般来说这个周期间隔是固定的（比如每100个 <code>seq#</code> ） ，当共识轮次能够被100整除时，将会生成一个检查点(checkpoint)，经过共识确认的检查点被称为稳定检查点<code>stable checkpoint</code>，当然稳定检查点需要带有至少<code>2f+1</code>个节点签名，即所谓的proof。生成稳定检查点之后，就可以清除该检查点之前的消息缓存，实现GC。</p>
@@ -431,10 +432,12 @@
 <h2 id="视图变更流程-view-change"><a href="#视图变更流程-view-change" class="headerlink" title="视图变更流程 view-change"></a>视图变更流程 view-change</h2><h3 id="标准VC流程"><a href="#标准VC流程" class="headerlink" title="标准VC流程"></a>标准VC流程</h3><p>视图变更时为了保证系统能够有一定的活性<code>liveness</code>，避免在主节点出现问题的时候无法恢复。</p>
 <p>view-change 通常是由超时机制触发的，这个超时定时器一般是系统处理交易伊始就设置的，当系统不再接受交易了。就不需要设置这个定时器。</p>
 <blockquote>
-<p>当然在工程上，如果一直需要设置取消定时器是非常麻烦的，所以，一般来说会一直启用定时器，并通过主节点心跳机制刷新定时器时间。</p>
+<p>当然在工程上，如果一直设置和取消定时器是很麻烦的，所以，一般来说会一直启用定时器，并通过主节点心跳机制刷新定时器时间。</p>
 <p>论文原话是定时器是为了避免从节点长时间的等待请求，这个需要结合<code>pre-prepare</code>进行说明，在通常情况下，主节点将会发送<code>pre-prepare</code> 来正常进行共识，从节点也可以通过该消息确认主节点是否存活，因此如果超过一段时间没有收到 <code>pre-prepare</code>的话就会认为该主节点有问题了。但是在工程上或者在实际运行当中，长时间没有<code>pre-prepare</code>是常见的，因此一般会通过心跳来进行探测保活，所以也不一定非得要用定时器。</p>
 </blockquote>
 <p>当这个定时器是设置在<code>v#</code>的，如果它超时了，将会触发 view change，然后把 view 设置为 <code>v#+1</code>，此时将停止接受消息（只接受三种消息: <code>CHECKPOINT</code>, <code>VIEW-CHANGE</code>,<code>NEW-VIEW</code> ）</p>
+<img src="https://tva1.sinaimg.cn/large/0081Kckwly1glhdqp5xtpj31410kyjvn.jpg" alt="view-change" style="zoom:48%;" />
+
 <p>当定时器超时，系统将会广播 <code>&lt;VIEW-CHANGE, v#+1, seq#(stable_checkpoint), C-set, P-set,i&gt;(i)</code>, 其中：</p>
 <ul>
 <li><code>(i)</code>标识由节点<code>i</code>发出</li>
@@ -493,10 +496,10 @@
 <p>针对 （1） 可以用心跳机制进行检测；</p>
 <p>针对（2）首先我们要明确其检测恶意节点的机制，一种方式是校验<code>prepare</code>消息中的请求签名,这种方式可以发现节点篡改，而针对消息顺序的篡改，可以通过一种简单约定，比如必须要按照绝对时间顺序排序等；</p>
 <p>当然如果一直由某一个特定节点打包，带来的问题是网络不公，这个问题有一种优化是每轮共识都重选主节点，还有一些优化是可以通过设置轮换间隔进行控制。</p>
-<p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgkztljhqj31fu0u0446.jpg"></p>
-<p><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgkzqv9rtj30fj06kq3m.jpg" alt="img"></p>
+<img src="https://tva1.sinaimg.cn/large/0081Kckwly1glhdqoqj3wj311b0lndjt.jpg" alt="rbft-vc" style="zoom:48%;" />
+
 <p>RBFT ViewChange流程</p>
-<p>上图中，Primary 1为拜占庭节点，需要进行ViewChange。在Hyperchain共识中的ViewChange流程如下：</p>
+<p>上图中，Primary （v）为拜占庭节点，需要进行ViewChange。在Hyperchain共识中的ViewChange流程如下：</p>
 <p>（1）从节点在检测到主节点有异常情况（没有按时收到nullRequest消息）或者接收到来自其他f+1个节点的ViewChange消息之后会向全网广播ViewChange消息，自身view从v更改为v+1；</p>
 <p>（2）新视图中主节点收到N-f 个ViewChange消息后，根据收到的ViewChange消息计算出新视图中主节点开始执行的checkpoint和接下来要处理的交易包，封装进NewView消息并广播，发起VcReset；</p>
 <p>（3）从节点接收到NewView消息之后进行消息的验证和对比，如果通过验证，进行VcReset，如果不通过，发送ViewChange消息，进行又一轮ViewChange；</p>
@@ -603,6 +606,7 @@
 <p>[8]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/56780298">共识 | 拜占庭容错的代表 PBFT</a></p>
 <p>[9]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/78010422">详解实用拜占庭容错协议</a></p>
 <p>[10]. <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/48899458">Hyperledger Fabric中PBFT算法详解</a></p>
+<p>[11]. <a target="_blank" rel="noopener" href="https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/">https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/</a></p>
 
                 </section>
 
